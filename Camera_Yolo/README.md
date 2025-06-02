@@ -31,10 +31,6 @@ Camera_Yolo/
 │   ├── libs/                   # Berxel SDK库文件
 │   ├── Include/                # 头文件
 │   └── Makefile                # 编译配置
-├── docs/                       # 技术文档
-│   ├── model_training.md       # 模型训练说明
-│   ├── camera_calibration.md   # 相机标定文档
-│   └── deployment.md           # 部署指南
 └── examples/                   # 使用示例
     ├── basic_detection.py      # 基础检测示例
     └── robot_integration.py    # 机器人集成示例
