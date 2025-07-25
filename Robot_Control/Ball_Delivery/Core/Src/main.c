@@ -182,32 +182,57 @@ int main(void)
 
     serialplot.Init(&huart2, 6, (char **)Variable_Assignment_List);
 
-    motor.PID_Angle.Init(18.0f, 1.25f, 0.0f, 0.0f, 15.0f * PI, 15.0f * PI);
-    motor.PID_Omega.Init(200.0f, 65.0f, 0.0f, 0.0f, 2500.0f, 2500.0f);
     motor.Init(&hcan1, CAN_Motor_ID_0x205, Control_Method_ANGLE);
     
-    // 启动时立即设置目标位置为-3π（送球位置）
-    motor.Set_Target_Angle(-3.0f * PI);
-    int motion_stage = 0; // 送球标志位，0: 送球阶段, 1: 完成阶段
+    // 送球运动状态标志位：0=送球阶段, 1=回到初始位置阶段
+    // 此处默认为送球阶段，可以修改为1以回到初始位置阶段
+    int motion_stage = 0; 
+    
+    // 初始化送球阶段的PID参数（较大的参数用于快速送球动作）
+    // 角度环：P=18.0, I=1.25 (用于精确位置控制)
+    // 速度环：P=200.0, I=65.0 (用于快速响应)
+    motor.PID_Angle.Init(18.0f, 1.25f, 0.0f, 0.0f, 15.0f * PI, 15.0f * PI);
+    motor.PID_Omega.Init(200.0f, 65.0f, 0.0f, 0.0f, 2500.0f, 2500.0f);
+
     /* USER CODE END 2 */
 
     /* Infinite loop */
     /* USER CODE BEGIN WHILE */
     while (1)
-    {
-        //如果计时到1800ms并且还在送球阶段，就回到0位置
-        Counter++;
-        if(Counter >= 1800 && motion_stage == 0)
+    {   
+        // ========== 送球阶段 (motion_stage == 0) ==========
+        if (motion_stage == 0)
         {
-            motion_stage = 1;
-            Counter = 0;
-            //重新设置目标值为0的PID参数
-            motor.PID_Angle.Set_K_P(10.0f);
-            motor.PID_Angle.Set_K_I(0.8f);
-            motor.PID_Omega.Set_K_P(110.0f);
-            motor.PID_Omega.Set_K_I(45.0f); 
-            motor.Set_Target_Angle(0.0f); // 回到初始位置
+            // 设置送球阶段的PID参数（高增益，用于快速准确的送球动作）
+            motor.PID_Angle.Set_K_P(18.0f);   // 角度环比例增益
+            motor.PID_Angle.Set_K_I(1.25f);   // 角度环积分增益
+            motor.PID_Omega.Set_K_P(200.0f);  // 速度环比例增益
+            motor.PID_Omega.Set_K_I(65.0f);   // 速度环积分增益
+            motor.Set_Target_Angle(-3.0f * PI); // 设置送球目标位置(-3π弧度)
+
+            // 送球阶段计时器，每个循环+1 (约1ms/次)
+            Counter++;
+            if(Counter >= 1800)  // 1.8秒后切换到回收阶段
+            {
+                Counter = 0;          // 重置计时器
+                motion_stage = 1;     // 切换到回到初始位置阶段
+            }
         }
+        
+        // ========== 回到初始位置阶段 (motion_stage == 1) ==========
+        if (motion_stage == 1)
+        {
+            // 设置回收阶段的PID参数（较低增益，用于平稳回到初始位置）
+            motor.PID_Angle.Set_K_P(10.0f);   // 角度环比例增益（降低）
+            motor.PID_Angle.Set_K_I(0.8f);    // 角度环积分增益（降低）
+            motor.PID_Omega.Set_K_P(110.0f);  // 速度环比例增益（降低）
+            motor.PID_Omega.Set_K_I(45.0f);   // 速度环积分增益（降低）
+            motor.Set_Target_Angle(0.0f);     // 设置回收目标位置(0弧度，初始位置)
+            
+            // 注意：当前版本在此阶段会持续运行，没有自动切换回送球阶段
+            // 如需循环执行，可在此处添加计时和状态切换逻辑
+        }
+        
 
         //串口绘图显示内容
 
