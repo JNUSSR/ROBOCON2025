@@ -72,16 +72,16 @@ typedef enum {
     BALL_STATE_IDLE,                     // 空闲状态
     BALL_STATE_PUSHING,                  // 气缸向下推开始（置高电平）
     BALL_STATE_WAITING_FOR_GRIPPER_OPEN, // 等待20ms后夹爪张开90度
-    BALL_STATE_PUSHING_HOLD,             // 继续保持高电平直到80ms
+    BALL_STATE_PUSHING_HOLD,             // 继续保持高电平直到130ms
     BALL_STATE_PULLING,                  // 气缸往回拉（置低电平）
     BALL_STATE_WAITING_FOR_GRIPPER_CLOSE // 等待450ms后夹爪关闭
 } Ball_State_t;
 
 Ball_State_t ball_state = BALL_STATE_IDLE;
 uint32_t ball_action_start_time = 0;  // 动作开始时间戳
-const uint32_t GRIPPER_OPEN_DELAY_MS = 20;   // 置高电平后20ms张开夹爪
-const uint32_t PUSH_TOTAL_DURATION_MS = 100;  // 高电平保持总时间100ms
-const uint32_t GRIPPER_CLOSE_DELAY_MS = 450; // 拉回后450ms关闭夹爪
+const uint32_t GRIPPER_OPEN_DELAY_MS = 25;   // 置高电平后25ms张开夹爪
+const uint32_t PUSH_TOTAL_DURATION_MS = 130;  // 高电平保持总时间130ms
+const uint32_t GRIPPER_CLOSE_DELAY_MS = 350; // 拉回后350ms关闭夹爪（打满气情况下）
 
 // 电机角度控制变量
 float Motor2006_Control_Command = 0.0f;  // 0=转到0度，1=转到90度 
@@ -240,6 +240,7 @@ void Ball_Control_Process()
             {
                 Motor2006_Rotate_0_Degree();  // 夹爪转回0度平放
                 Motor2006_Control_Command = 0.0f;  // 更新控制命令
+                Ball_Control_Command = 0.0f;  // 更新控制命令
                 ball_state = BALL_STATE_IDLE; // 动作完成，回到空闲状态
             }
             break;
@@ -496,7 +497,6 @@ int main(void)
       // ballpush();
       // ballpull();
       // ballgap();		
-
 		//串口绘图显示内容
         Target_Angle = motor1.Get_Target_Angle();
         Now_Angle = motor1.Get_Now_Angle();
