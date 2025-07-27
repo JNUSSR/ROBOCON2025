@@ -1,0 +1,2 @@
+source /home/ljhua/robocon/25/esptest/sendtest/serial_espnow_project/build/gdbinit/symbols
+source /home/ljhua/robocon/25/esptest/sendtest/serial_espnow_project/build/gdbinit/connect
