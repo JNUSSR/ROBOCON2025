@@ -1,0 +1,60 @@
+# Keil MDK-ARM
+*.uvguix.*
+*.uvoptx
+*.uvprojx
+*.uvguix
+*.uvopt
+*.uvproj
+*.uvmpw
+*.uvguix.linzh
+
+# Build outputs
+*.o
+*.d
+*.crf
+*.dep
+*.map
+*.hex
+*.bin
+*.axf
+*.elf
+*.sct
+*.lnp
+*.htm
+*.build_log.htm
+*.uvguix.*
+*.uvoptx
+*.uvprojx
+
+# Debug files
+*.dbgconf
+*.uvguix.linzh
+
+# IDE files
+.vscode/
+.idea/
+*.code-workspace
+
+# CubeMX generated files (optional - remove if you want to include them)
+# *.ioc
+# .mxproject
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*.swo
+
+# User specific files
+*.usr.ctx.json
