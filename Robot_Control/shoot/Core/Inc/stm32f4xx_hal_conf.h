@@ -39,7 +39,11 @@
 
   /* #define HAL_CRYP_MODULE_ENABLED */
 /* #define HAL_ADC_MODULE_ENABLED */
+<<<<<<< HEAD
 #define HAL_CAN_MODULE_ENABLED
+=======
+/* #define HAL_CAN_MODULE_ENABLED */
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 /* #define HAL_CRC_MODULE_ENABLED */
 /* #define HAL_CAN_LEGACY_MODULE_ENABLED */
 /* #define HAL_DAC_MODULE_ENABLED */

@@ -282,7 +282,12 @@
             }
           ]
         },
+<<<<<<< HEAD
         "options": "null"
+=======
+        "options": "null",
+        "archExtensions": ""
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
       },
       "uploader": "STLink",
       "uploadConfig": {
@@ -318,6 +323,10 @@
           "../Drivers/CMSIS/Device/ST/STM32F4xx/Include",
           "../Drivers/CMSIS/Include",
           "../User",
+<<<<<<< HEAD
+=======
+          ".cmsis/include",
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
           "RTE/_test_feedback"
         ],
         "libList": [],
@@ -354,5 +363,9 @@
       }
     }
   },
+<<<<<<< HEAD
   "version": "3.5"
+=======
+  "version": "3.6"
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 }

@@ -18,7 +18,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+<<<<<<< HEAD
 #include "can.h"
+=======
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 #include "dma.h"
 #include "tim.h"
 #include "usart.h"
@@ -112,7 +115,10 @@ int main(void)
   MX_TIM5_Init();
   MX_TIM4_Init();
   MX_TIM8_Init();
+<<<<<<< HEAD
   MX_CAN1_Init();
+=======
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
   /* USER CODE BEGIN 2 */
    PID_total_init(); // PID参数初始化
 
@@ -130,10 +136,17 @@ int main(void)
   
   // 串口初始化，用于数据上报
   serialplot.Init(&huart2, 3, NULL);
+<<<<<<< HEAD
     __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_2, 840);
     __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_3, 840);
     __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_4, 840);
     HAL_Delay(6000); // 等待1秒，确保系统稳定
+=======
+    __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_2, 500);
+    __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_3, 500);
+    __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_4, 500);
+    HAL_Delay(3000); // 开环缓启动，等待3秒，确保系统稳定
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -163,9 +176,15 @@ int main(void)
     if (output_pid[2] > __HAL_TIM_GET_AUTORELOAD(&htim5)) output_pid[2] = __HAL_TIM_GET_AUTORELOAD(&htim5);
 
     // 设置PWM占空比，实现对电机的速度控制
+<<<<<<< HEAD
     __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_2, Motor_pid[0].OUT);
     __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_3, Motor_pid[1].OUT);
     __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_4, Motor_pid[2].OUT);
+=======
+    // __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_2, Motor_pid[0].OUT);
+    // __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_3, Motor_pid[1].OUT);
+    // __HAL_TIM_SET_COMPARE(&htim5, TIM_CHANNEL_4, Motor_pid[2].OUT);
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 
     //发送数据到上位机，便于调试和监控
         serialplot.Set_Data(6, &Tx_1, &output_pid[0], &Tx_2, &output_pid[1],&Tx_3, &output_pid[3]);
@@ -204,7 +223,11 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = 6;
+<<<<<<< HEAD
   RCC_OscInitStruct.PLL.PLLN = 168;
+=======
+  RCC_OscInitStruct.PLL.PLLN = 180;
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = 4;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
@@ -212,6 +235,16 @@ void SystemClock_Config(void)
     Error_Handler();
   }
 
+<<<<<<< HEAD
+=======
+  /** Activate the Over-Drive mode
+  */
+  if (HAL_PWREx_EnableOverDrive() != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
   /** Initializes the CPU, AHB and APB buses clocks
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK

@@ -1,0 +1,30 @@
+--cpu Cortex-M4.fp --scatter d:/¡÷÷«ºŒ/–Èƒ‚c≈Ã/Õ∂¿∫/test_feedback/MDK-ARM/build/test_feedback/test_feedback.sct --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers
+--list .\build\test_feedback\test_feedback.map
+.\build\test_feedback\.obj\__\Core\Src\dma.o
+.\build\test_feedback\.obj\__\Core\Src\gpio.o
+.\build\test_feedback\.obj\__\Core\Src\main.o
+.\build\test_feedback\.obj\__\Core\Src\stm32f4xx_hal_msp.o
+.\build\test_feedback\.obj\__\Core\Src\stm32f4xx_it.o
+.\build\test_feedback\.obj\__\Core\Src\system_stm32f4xx.o
+.\build\test_feedback\.obj\__\Core\Src\tim.o
+.\build\test_feedback\.obj\__\Core\Src\usart.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.o
+.\build\test_feedback\.obj\__\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.o
+.\build\test_feedback\.obj\__\User\drv_uart.o
+.\build\test_feedback\.obj\__\User\dvc_serialplot.o
+.\build\test_feedback\.obj\__\User\pid.o
+.\build\test_feedback\.obj\startup_stm32f427xx.o -o .\build\test_feedback\test_feedback.axf

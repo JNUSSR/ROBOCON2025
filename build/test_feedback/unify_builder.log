@@ -1,0 +1,43 @@
+[2025-06-22 17:34:18]	[info] incremental build: 28 source files changed
+These source files will be recompiled
+---
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Core\Src\dma.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Core\Src\gpio.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Core\Src\main.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Core\Src\stm32f4xx_hal_msp.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Core\Src\stm32f4xx_it.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Core\Src\system_stm32f4xx.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Core\Src\tim.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Core\Src\usart.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\User\drv_uart.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\User\dvc_serialplot.cpp': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\User\pid.c': object (.o) file not exist
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\MDK-ARM\startup_stm32f427xx.s': object (.o) file not exist
+
+[2025-06-22 17:34:24]	[done]
+	build successfully !
+
+[2025-06-22 17:36:21]	[info] incremental build: 1 source files changed
+These source files will be recompiled
+---
+'d:\¡÷÷«ºŒ\–Èƒ‚c≈Ã\Õ∂¿∫\test_feedback\Core\Src\main.c': source file has been changed.
+
+[2025-06-22 17:36:22]	[done]
+	build successfully !
+

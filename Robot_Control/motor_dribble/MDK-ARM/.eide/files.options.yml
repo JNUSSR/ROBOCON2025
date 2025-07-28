@@ -13,7 +13,11 @@
 #   '!Application/*.c':   -O0
 #   '**/*.c':             -O2 -gnu ...
 
+<<<<<<< HEAD
 version: "2.0"
+=======
+version: "2.1"
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 options:
     test_feedback:
         files: {}

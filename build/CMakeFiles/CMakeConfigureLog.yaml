@@ -1,0 +1,407 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:199 (message)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      The target system is: Generic -  - arm
+      The host system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: C:/Users/lsh/.eide/tools/gcc_arm/bin/arm-none-eabi-gcc.exe 
+      Build flags: ;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;;-Wall;-Wextra;-Wpedantic;-fdata-sections;-ffunction-sections
+      Id flags:  
+      
+      The output was:
+      1
+      c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/ld.exe: c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x16): undefined reference to `_exit'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Users/lsh/.eide/tools/gcc_arm/bin/arm-none-eabi-gcc.exe 
+      Build flags: ;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;;-Wall;-Wextra;-Wpedantic;-fdata-sections;-ffunction-sections
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/3.26.4-msvc4/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: C:/Users/lsh/.eide/tools/gcc_arm/bin/arm-none-eabi-g++.exe 
+      Build flags: ;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;;-Wall;-Wextra;-Wpedantic;-fdata-sections;-ffunction-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Id flags:  
+      
+      The output was:
+      1
+      c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/ld.exe: c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\\libc.a(lib_a-exit.o): in function `exit':
+      exit.c:(.text.exit+0x16): undefined reference to `_exit'
+      collect2.exe: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Users/lsh/.eide/tools/gcc_arm/bin/arm-none-eabi-g++.exe 
+      Build flags: ;-mcpu=cortex-m4;-mfpu=fpv4-sp-d16;-mfloat-abi=hard;;-Wall;-Wextra;-Wpedantic;-fdata-sections;-ffunction-sections;-fno-rtti;-fno-exceptions;-fno-threadsafe-statics
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is GNU, found in:
+        D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/3.26.4-msvc4/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-duffjn"
+      binary: "D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-duffjn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections"
+      CMAKE_C_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-duffjn
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe -E env VERBOSE=1 D:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_04cb7/fast && D:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_04cb7.dir\\build.make CMakeFiles/cmTC_04cb7.dir/build
+        mingw32-make.exe[1]: Entering directory 'D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-duffjn'
+        Building C object CMakeFiles/cmTC_04cb7.dir/CMakeCCompilerABI.c.obj
+        C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-gcc.exe   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles\\cmTC_04cb7.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-gcc.exe
+        Target: arm-none-eabi
+        Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10-2020-q4-major' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.2.1 20201103 (release) (GNU Arm Embedded Toolchain 10-2020-q4-major) 
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles\\cmTC_04cb7.dir\\CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-march=armv7e-m+fp'
+         c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/ -isysroot c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../arm-none-eabi -D__USES_INITFINI__ C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -march=armv7e-m+fp -auxbase-strip CMakeFiles\\cmTC_04cb7.dir\\CMakeCCompilerABI.c.obj -Wall -Wextra -Wpedantic -std=gnu11 -version -fdata-sections -ffunction-sections -o C:\\TMP\\ccyoi6lU.s
+        GNU C11 (GNU Arm Embedded Toolchain 10-2020-q4-major) version 10.2.1 20201103 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "c:/users/lsh/.eide/tools/gcc_arm/lib/gcc/../../lib/gcc/arm-none-eabi/10.2.1/include"
+        ignoring nonexistent directory "c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/lib/gcc/arm-none-eabi/10.2.1/../../../../include"
+        ignoring duplicate directory "c:/users/lsh/.eide/tools/gcc_arm/lib/gcc/../../lib/gcc/arm-none-eabi/10.2.1/include-fixed"
+        ignoring duplicate directory "c:/users/lsh/.eide/tools/gcc_arm/lib/gcc/../../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"
+        ignoring nonexistent directory "c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../arm-none-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/include
+         c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/include-fixed
+         c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include
+        End of search list.
+        GNU C11 (GNU Arm Embedded Toolchain 10-2020-q4-major) version 10.2.1 20201103 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: d0af1807fcd872df6b1165770acff16d
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles\\cmTC_04cb7.dir\\CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-march=armv7e-m+fp'
+         c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles\\cmTC_04cb7.dir\\CMakeCCompilerABI.c.obj C:\\TMP\\ccyoi6lU.s
+        GNU assembler version 2.35.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10-2020-q4-major) 2.35.1.20201028
+        COMPILER_PATH=c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/;c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/;c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m+fp/hard/;c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;c:/users/lsh/.eide/tools/gcc_arm/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/;c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/;c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/;c:/users/lsh/.eide/tools/gcc_arm/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles\\cmTC_04cb7.dir\\CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-march=armv7e-m+fp'
+        Linking C static library libcmTC_04cb7.a
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_04cb7.dir\\cmake_clean_target.cmake
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_04cb7.dir\\link.txt --verbose=1
+        C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-ar.exe qc libcmTC_04cb7.a CMakeFiles/cmTC_04cb7.dir/CMakeCCompilerABI.c.obj
+        C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-ranlib.exe libcmTC_04cb7.a
+        mingw32-make.exe[1]: Leaving directory 'D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-duffjn'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/include]
+          add: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/include-fixed]
+          add: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/include] ==> [C:/Users/lsh/.eide/tools/gcc_arm/lib/gcc/arm-none-eabi/10.2.1/include]
+        collapse include dir [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/include-fixed] ==> [C:/Users/lsh/.eide/tools/gcc_arm/lib/gcc/arm-none-eabi/10.2.1/include-fixed]
+        collapse include dir [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include] ==> [C:/Users/lsh/.eide/tools/gcc_arm/arm-none-eabi/include]
+        implicit include dirs: [C:/Users/lsh/.eide/tools/gcc_arm/lib/gcc/arm-none-eabi/10.2.1/include;C:/Users/lsh/.eide/tools/gcc_arm/lib/gcc/arm-none-eabi/10.2.1/include-fixed;C:/Users/lsh/.eide/tools/gcc_arm/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-duffjn]
+        ignore line: []
+        ignore line: [Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe -E env VERBOSE=1 D:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_04cb7/fast && D:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_04cb7.dir\\build.make CMakeFiles/cmTC_04cb7.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-duffjn']
+        ignore line: [Building C object CMakeFiles/cmTC_04cb7.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-gcc.exe   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections  -std=gnu11   -v -o CMakeFiles\\cmTC_04cb7.dir\\CMakeCCompilerABI.c.obj -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-gcc.exe]
+        ignore line: [Target: arm-none-eabi]
+        ignore line: [Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10-2020-q4-major' --with-multilib-list=rmprofile,aprofile]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 10.2.1 20201103 (release) (GNU Arm Embedded Toolchain 10-2020-q4-major) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles\\cmTC_04cb7.dir\\CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-march=armv7e-m+fp']
+        ignore line: [ c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/cc1.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/ -isysroot c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../arm-none-eabi -D__USES_INITFINI__ C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -march=armv7e-m+fp -auxbase-strip CMakeFiles\\cmTC_04cb7.dir\\CMakeCCompilerABI.c.obj -Wall -Wextra -Wpedantic -std=gnu11 -version -fdata-sections -ffunction-sections -o C:\\TMP\\ccyoi6lU.s]
+        ignore line: [GNU C11 (GNU Arm Embedded Toolchain 10-2020-q4-major) version 10.2.1 20201103 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "c:/users/lsh/.eide/tools/gcc_arm/lib/gcc/../../lib/gcc/arm-none-eabi/10.2.1/include"]
+        ignore line: [ignoring nonexistent directory "c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/lib/gcc/arm-none-eabi/10.2.1/../../../../include"]
+        ignore line: [ignoring duplicate directory "c:/users/lsh/.eide/tools/gcc_arm/lib/gcc/../../lib/gcc/arm-none-eabi/10.2.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "c:/users/lsh/.eide/tools/gcc_arm/lib/gcc/../../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"]
+        ignore line: [ignoring nonexistent directory "c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../arm-none-eabi/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/include]
+        ignore line: [ c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/include-fixed]
+        ignore line: [ c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C11 (GNU Arm Embedded Toolchain 10-2020-q4-major) version 10.2.1 20201103 (release) (arm-none-eabi)]
+        ignore line: [	compiled by GNU C version 7.3-win32 20180312  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: d0af1807fcd872df6b1165770acff16d]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles\\cmTC_04cb7.dir\\CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-march=armv7e-m+fp']
+        ignore line: [ c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles\\cmTC_04cb7.dir\\CMakeCCompilerABI.c.obj C:\\TMP\\ccyoi6lU.s]
+        ignore line: [GNU assembler version 2.35.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10-2020-q4-major) 2.35.1.20201028]
+        ignore line: [COMPILER_PATH=c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/]
+        ignore line: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/]
+        ignore line: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/]
+        ignore line: [LIBRARY_PATH=c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m+fp/hard/]
+        ignore line: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [c:/users/lsh/.eide/tools/gcc_arm/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/]
+        ignore line: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/]
+        ignore line: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/]
+        ignore line: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/]
+        ignore line: [c:/users/lsh/.eide/tools/gcc_arm/bin/../arm-none-eabi/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-std=gnu11' '-v' '-o' 'CMakeFiles\\cmTC_04cb7.dir\\CMakeCCompilerABI.c.obj' '-c' '-mthumb' '-march=armv7e-m+fp']
+        ignore line: [Linking C static library libcmTC_04cb7.a]
+        ignore line: ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_04cb7.dir\\cmake_clean_target.cmake]
+        ignore line: ["C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_04cb7.dir\\link.txt --verbose=1]
+        ignore line: [C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-ar.exe qc libcmTC_04cb7.a CMakeFiles/cmTC_04cb7.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-ranlib.exe libcmTC_04cb7.a]
+        ignore line: [mingw32-make.exe[1]: Leaving directory 'D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-duffjn']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-8oqx8c"
+      binary: "D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-8oqx8c"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics"
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g3"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-8oqx8c
+        
+        Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe -E env VERBOSE=1 D:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_fefaa/fast && D:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_fefaa.dir\\build.make CMakeFiles/cmTC_fefaa.dir/build
+        mingw32-make.exe[1]: Entering directory 'D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-8oqx8c'
+        Building CXX object CMakeFiles/cmTC_fefaa.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-g++.exe   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics    -v -o CMakeFiles\\cmTC_fefaa.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-g++.exe
+        Target: arm-none-eabi
+        Configured with: /mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/src/gcc/configure --build=x86_64-linux-gnu --host=i686-w64-mingw32 --target=arm-none-eabi --prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw --libexecdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/lib --infodir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/share/doc/gcc-arm-none-eabi/info --mandir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/share/doc/gcc-arm-none-eabi/man --htmldir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/share/doc/gcc-arm-none-eabi/html --pdfdir=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/share/doc/gcc-arm-none-eabi/pdf --enable-languages=c,c++ --enable-mingw-wildcard --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-headers=yes --with-newlib --with-python-dir=share/gcc-arm-none-eabi --with-sysroot=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/arm-none-eabi --with-libiconv-prefix=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-gmp=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-mpfr=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-mpc=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-isl=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-libelf=/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/build-mingw/host-libs/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='GNU Arm Embedded Toolchain 10-2020-q4-major' --with-multilib-list=rmprofile,aprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib
+        gcc version 10.2.1 20201103 (release) (GNU Arm Embedded Toolchain 10-2020-q4-major) 
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles\\cmTC_fefaa.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-march=armv7e-m+fp'
+         c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/cc1plus.exe -quiet -v -imultilib thumb/v7e-m+fp/hard -iprefix c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/ -isysroot c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../arm-none-eabi -D__USES_INITFINI__ C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -march=armv7e-m+fp -auxbase-strip CMakeFiles\\cmTC_fefaa.dir\\CMakeCXXCompilerABI.cpp.obj -Wall -Wextra -Wpedantic -version -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics -o C:\\TMP\\ccMTIQ3y.s
+        GNU C++14 (GNU Arm Embedded Toolchain 10-2020-q4-major) version 10.2.1 20201103 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "c:/users/lsh/.eide/tools/gcc_arm/lib/gcc/../../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"
+        ignoring duplicate directory "c:/users/lsh/.eide/tools/gcc_arm/lib/gcc/../../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi/thumb/v7e-m+fp/hard"
+        ignoring duplicate directory "c:/users/lsh/.eide/tools/gcc_arm/lib/gcc/../../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"
+        ignoring duplicate directory "c:/users/lsh/.eide/tools/gcc_arm/lib/gcc/../../lib/gcc/arm-none-eabi/10.2.1/include"
+        ignoring nonexistent directory "c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../arm-none-eabi/mnt/workspace/workspace/GCC-10-pipeline/jenkins-GCC-10-pipeline-48_20201124_1606180641/install-mingw/lib/gcc/arm-none-eabi/10.2.1/../../../../include"
+        ignoring duplicate directory "c:/users/lsh/.eide/tools/gcc_arm/lib/gcc/../../lib/gcc/arm-none-eabi/10.2.1/include-fixed"
+        ignoring duplicate directory "c:/users/lsh/.eide/tools/gcc_arm/lib/gcc/../../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"
+        ignoring nonexistent directory "c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../arm-none-eabi/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1
+         c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi/thumb/v7e-m+fp/hard
+         c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward
+         c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/include
+         c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/include-fixed
+         c:\\users\\lsh\\.eide\\tools\\gcc_arm\\bin\\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include
+        End of search list.
+        GNU C++14 (GNU Arm Embedded Toolchain 10-2020-q4-major) version 10.2.1 20201103 (release) (arm-none-eabi)
+        	compiled by GNU C version 7.3-win32 20180312, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: a4fe51cc32557f05b9d40da079bbd1f1
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles\\cmTC_fefaa.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-march=armv7e-m+fp'
+         c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/as.exe -v -march=armv7e-m -mfloat-abi=hard -mfpu=fpv4-sp-d16 -meabi=5 -o CMakeFiles\\cmTC_fefaa.dir\\CMakeCXXCompilerABI.cpp.obj C:\\TMP\\ccMTIQ3y.s
+        GNU assembler version 2.35.1 (arm-none-eabi) using BFD version (GNU Arm Embedded Toolchain 10-2020-q4-major) 2.35.1.20201028
+        COMPILER_PATH=c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/;c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/;c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v7e-m+fp/hard/;c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;c:/users/lsh/.eide/tools/gcc_arm/bin/../arm-none-eabi/lib/thumb/v7e-m+fp/hard/;c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/;c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/;c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/;c:/users/lsh/.eide/tools/gcc_arm/bin/../arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-mcpu=cortex-m4' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard' '-Wall' '-Wextra' '-Wpedantic' '-fdata-sections' '-ffunction-sections' '-fno-rtti' '-fno-exceptions' '-fno-threadsafe-statics' '-v' '-o' 'CMakeFiles\\cmTC_fefaa.dir\\CMakeCXXCompilerABI.cpp.obj' '-c' '-mthumb' '-march=armv7e-m+fp'
+        Linking CXX static library libcmTC_fefaa.a
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -P CMakeFiles\\cmTC_fefaa.dir\\cmake_clean_target.cmake
+        "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_fefaa.dir\\link.txt --verbose=1
+        C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-ar.exe qc libcmTC_fefaa.a CMakeFiles/cmTC_fefaa.dir/CMakeCXXCompilerABI.cpp.obj
+        C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-ranlib.exe libcmTC_fefaa.a
+        mingw32-make.exe[1]: Leaving directory 'D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-8oqx8c'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1]
+          add: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+          add: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward]
+          add: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/include]
+          add: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/include-fixed]
+          add: [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include]
+        end of search list found
+        collapse include dir [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1] ==> [C:/Users/lsh/.eide/tools/gcc_arm/arm-none-eabi/include/c++/10.2.1]
+        collapse include dir [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi/thumb/v7e-m+fp/hard] ==> [C:/Users/lsh/.eide/tools/gcc_arm/arm-none-eabi/include/c++/10.2.1/arm-none-eabi/thumb/v7e-m+fp/hard]
+        collapse include dir [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward] ==> [C:/Users/lsh/.eide/tools/gcc_arm/arm-none-eabi/include/c++/10.2.1/backward]
+        collapse include dir [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/include] ==> [C:/Users/lsh/.eide/tools/gcc_arm/lib/gcc/arm-none-eabi/10.2.1/include]
+        collapse include dir [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/include-fixed] ==> [C:/Users/lsh/.eide/tools/gcc_arm/lib/gcc/arm-none-eabi/10.2.1/include-fixed]
+        collapse include dir [c:/users/lsh/.eide/tools/gcc_arm/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include] ==> [C:/Users/lsh/.eide/tools/gcc_arm/arm-none-eabi/include]
+        implicit include dirs: [C:/Users/lsh/.eide/tools/gcc_arm/arm-none-eabi/include/c++/10.2.1;C:/Users/lsh/.eide/tools/gcc_arm/arm-none-eabi/include/c++/10.2.1/arm-none-eabi/thumb/v7e-m+fp/hard;C:/Users/lsh/.eide/tools/gcc_arm/arm-none-eabi/include/c++/10.2.1/backward;C:/Users/lsh/.eide/tools/gcc_arm/lib/gcc/arm-none-eabi/10.2.1/include;C:/Users/lsh/.eide/tools/gcc_arm/lib/gcc/arm-none-eabi/10.2.1/include-fixed;C:/Users/lsh/.eide/tools/gcc_arm/arm-none-eabi/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:31 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(arm-none-eabi-g\\+\\+\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-8oqx8c]
+        ignore line: []
+        ignore line: [Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe -E env VERBOSE=1 D:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_fefaa/fast && D:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_fefaa.dir\\build.make CMakeFiles/cmTC_fefaa.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'D:/ROBOCON_code/math_and_communcation/ROBOCON2025/build/CMakeFiles/CMakeScratch/TryCompile-8oqx8c']
+        ignore line: [Building CXX object CMakeFiles/cmTC_fefaa.dir/CMakeCXXCompilerABI.cpp.obj]
+        link line: [C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-g++.exe   -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -fno-rtti -fno-exceptions -fno-threadsafe-statics    -v -o CMakeFiles\\cmTC_fefaa.dir\\CMakeCXXCompilerABI.cpp.obj -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"]
+          arg [C:\\Users\\lsh\\.eide\\tools\\gcc_arm\\bin\\arm-none-eabi-g++.exe] ==> ignore
+          arg [-mcpu=cortex-m4] ==> ignore
+          arg [-mfpu=fpv4-sp-d16] ==> ignore
+          arg [-mfloat-abi=hard] ==> ignore
+          arg [-Wall] ==> ignore
+          arg [-Wextra] ==> ignore
+          arg [-Wpedantic] ==> ignore
+          arg [-fdata-sections] ==> ignore
+          arg [-ffunction-sections] ==> ignore
+          arg [-fno-rtti] ==> ignore
+          arg [-fno-exceptions] ==> ignore
+          arg [-fno-threadsafe-statics] ==> ignore
+          arg [-v] ==> ignore
+          arg [-o] ==> ignore
+          arg [CMakeFiles\\cmTC_fefaa.dir\\CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [-c] ==> ignore
+          arg [C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp] ==> ignore
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1102 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:35 (enable_language)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc.exe (GNU Arm Embedded Toolchain 10-2020-q4-major) 10.2.1 20201103 (release)
+      Copyright (C) 2020 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+...

@@ -60,12 +60,37 @@ Class_Motor_C620 motor3;
 
 float Target_Angle, Now_Angle, Target_Omega, Now_Omega;
 
+<<<<<<< HEAD
 // uint32_t Counter = 0;
 
 //气缸延时
 const int push=5000;
 const int pull=5000;
 const int gap=1000;
+=======
+uint32_t Counter = 0;
+
+// //气缸延时
+// const int push=1000;
+// const int pull=1000;
+// const int gap=1000;
+
+// 非阻塞式气缸控制变量
+typedef enum {
+    BALL_STATE_IDLE,                     // 空闲状态
+    BALL_STATE_PUSHING,                  // 气缸向下推开始（置高电平）
+    BALL_STATE_WAITING_FOR_GRIPPER_OPEN, // 等待20ms后夹爪张开90度
+    BALL_STATE_PUSHING_HOLD,             // 继续保持高电平直到130ms
+    BALL_STATE_PULLING,                  // 气缸往回拉（置低电平）
+    BALL_STATE_WAITING_FOR_GRIPPER_CLOSE // 等待450ms后夹爪关闭
+} Ball_State_t;
+
+Ball_State_t ball_state = BALL_STATE_IDLE;
+uint32_t ball_action_start_time = 0;  // 动作开始时间戳
+const uint32_t GRIPPER_OPEN_DELAY_MS = 25;   // 置高电平后25ms张开夹爪
+const uint32_t PUSH_TOTAL_DURATION_MS = 130;  // 高电平保持总时间130ms
+const uint32_t GRIPPER_CLOSE_DELAY_MS = 350; // 拉回后350ms关闭夹爪（打满气情况下）
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 
 // 电机角度控制变量
 float Motor2006_Control_Command = 0.0f;  // 0=转到0度，1=转到90度 
@@ -109,8 +134,13 @@ void SystemClock_Config(void);
 void Motor2006_Rotate_90_Degree() {
 
   // 设置目标角度
+<<<<<<< HEAD
   motor1.Set_Target_Angle(18.0f * PI);
   motor2.Set_Target_Angle(18.0f * PI);
+=======
+  motor1.Set_Target_Angle(17.0f * PI);
+  motor2.Set_Target_Angle(17.0f * PI);
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 }
 
 /**
@@ -148,10 +178,17 @@ void Motor3508_Rotate_0_Degree() {
  * @brief 控制气缸向上拉
  * @param 
  */
+<<<<<<< HEAD
 void ballpull( )
 {
 	 HAL_GPIO_WritePin(GPIOF,GPIO_PIN_0,GPIO_PIN_SET);
 	 HAL_Delay(push);
+=======
+void ballpull()
+{
+	 HAL_GPIO_WritePin(GPIOF,GPIO_PIN_0,GPIO_PIN_RESET);
+	//  HAL_Delay(push);
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 }
 
 /**
@@ -160,6 +197,7 @@ void ballpull( )
  */
 void ballpush()
 {
+<<<<<<< HEAD
 	HAL_GPIO_WritePin(GPIOF,GPIO_PIN_0,GPIO_PIN_RESET);
 	HAL_Delay(pull);
 }
@@ -171,6 +209,89 @@ void ballpush()
 void ballgap()
 {
 	HAL_Delay(gap);
+=======
+	HAL_GPIO_WritePin(GPIOF,GPIO_PIN_0,GPIO_PIN_SET);
+	// HAL_Delay(pull);
+}
+
+// /**
+//  * @brief 控制气缸暂停  
+//  * @param 
+//  */
+// void ballgap()
+// {
+// 	HAL_Delay(gap);
+// }
+
+/**
+ * @brief 非阻塞式气缸控制处理函数
+ * @param 需要在主循环中持续调用
+ */
+void Ball_Control_Process()
+{
+    switch(ball_state)
+    {
+        case BALL_STATE_IDLE:
+            // 空闲状态，等待触发
+            break;
+            
+        case BALL_STATE_PUSHING:
+            // 气缸向下推
+            ballpush();
+            ball_action_start_time = HAL_GetTick();  // 记录开始时间
+            ball_state = BALL_STATE_WAITING_FOR_GRIPPER_OPEN;  // 进入等待夹爪张开状态
+            break;
+            
+        case BALL_STATE_WAITING_FOR_GRIPPER_OPEN:
+            // 等待20ms后夹爪张开90度
+            ballpush();
+            if(HAL_GetTick() - ball_action_start_time >= GRIPPER_OPEN_DELAY_MS)
+            {
+                Motor2006_Rotate_90_Degree(); // 夹爪张开90度
+                ball_state = BALL_STATE_PUSHING_HOLD;  // 进入保持推动状态
+            }
+            break;
+            
+        case BALL_STATE_PUSHING_HOLD:
+            // 继续保持高电平直到总共100ms
+            ballpush();
+            if(HAL_GetTick() - ball_action_start_time >= PUSH_TOTAL_DURATION_MS)
+            {
+                ball_state = BALL_STATE_PULLING;  // 100ms后进入拉回状态
+            }
+            break;
+            
+        case BALL_STATE_PULLING:
+            // 气缸往回拉，置低电平
+            ballpull();     // 设置低电平拉回
+            ball_action_start_time = HAL_GetTick();  // 重新记录时间
+            ball_state = BALL_STATE_WAITING_FOR_GRIPPER_CLOSE;  // 进入等待夹爪关闭状态
+            break;
+            
+        case BALL_STATE_WAITING_FOR_GRIPPER_CLOSE:
+            // 等待450ms后夹爪关闭到0度
+            if(HAL_GetTick() - ball_action_start_time >= GRIPPER_CLOSE_DELAY_MS)
+            {
+                Motor2006_Rotate_0_Degree();  // 夹爪转回0度平放
+                Motor2006_Control_Command = 0.0f;  // 更新控制命令
+                Ball_Control_Command = 0.0f;  // 更新控制命令
+                ball_state = BALL_STATE_IDLE; // 动作完成，回到空闲状态
+            }
+            break;
+    }
+}
+
+/**
+ * @brief 启动非阻塞式推拉球操作
+ * @param 替代原来的阻塞式ballpush+延时+ballpull操作
+ */
+void Start_Ball_Push_Pull()
+{
+    if(ball_state == BALL_STATE_IDLE)
+    {
+        ball_state = BALL_STATE_PUSHING;  // 启动推拉球序列
+    }
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 }
 
 /**
@@ -263,12 +384,18 @@ void UART_Serialplot_Call_Back(uint8_t *Buffer, uint16_t Length)
             // 根据命令值控制电机角度
           if (Motor2006_Control_Command < 0.5f) {
               Motor2006_Rotate_0_Degree();  // 转到0度
+<<<<<<< HEAD
 			        ballpull();
 			  
           } else {
               Motor2006_Rotate_90_Degree(); // 转到90度
 			        ballpush();
         }
+=======
+          } else {
+              Motor2006_Rotate_90_Degree(); // 转到90度
+            }
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
         }
         break;
         case(7):
@@ -276,8 +403,15 @@ void UART_Serialplot_Call_Back(uint8_t *Buffer, uint16_t Length)
             Motor3508_Control_Command = serialplot.Get_Variable_Value();
             // 根据命令值控制电机角度
           if (Motor3508_Control_Command < 0.5f) {
+<<<<<<< HEAD
               Motor3508_Rotate_0_Degree();  // 转到0度
           } else {
+=======
+              Motor3508_Control_Command = 0.0f;   //防止命令冲突
+              Motor3508_Rotate_0_Degree();  // 转到0度
+          } else {
+              Motor3508_Control_Command = 1.0f;   //防止命令冲突
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
               Motor3508_Rotate_180_Degree(); // 转到180度
           }
         }
@@ -286,18 +420,62 @@ void UART_Serialplot_Call_Back(uint8_t *Buffer, uint16_t Length)
         {
             Ball_Control_Command = serialplot.Get_Variable_Value();
             if (Ball_Control_Command < 0.5f) {
+<<<<<<< HEAD
               Motor2006_Rotate_0_Degree();  // 转到0度
             } else {
               Motor2006_Rotate_90_Degree(); // 转到90度
               HAL_Delay(10);
 			        ballpush();                 // 气缸向下推
               ballpull();                   // 气缸向上拉
+=======
+              Motor2006_Control_Command = 0.0f;   //防止命令冲突
+              Motor2006_Rotate_0_Degree();  // 转到0度
+            } else {
+              Motor2006_Control_Command = 1.0f;
+              // 使用非阻塞式气缸和夹爪控制序列
+              // 状态机会自动处理：气缸推下->20ms->夹爪90度->气缸拉回->350ms->夹爪0度
+              Start_Ball_Push_Pull();     // 启动推拉球序列
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
             }
         }
         break; 
       }
 }
 
+<<<<<<< HEAD
+=======
+// /**
+//  * @brief 蓝牙控制回调函数
+//  * @param Buffer 接收到的数据缓冲区
+//  * @param Length 数据长度
+//  */
+// void UART_Bluetooth_Call_Back(uint8_t *Buffer, uint16_t Length)
+// {
+//     if(Length > 0)
+//     {
+//         switch(Buffer[0])
+//         {
+//             case '0':
+//                 // 回到初始位置
+//                 Motor2006_Rotate_0_Degree();
+//                 Motor2006_Control_Command = 0;
+//                 break;
+                
+//             case '1':
+//                 // 执行抓球动作
+//                 Motor2006_Rotate_90_Degree();
+//                 Motor2006_Control_Command = 1;
+//                 Start_Ball_Push_Pull();  // 启动非阻塞式推拉球序列
+//                 break;
+                
+//             default:
+//                 // 未知命令，不执行任何操作
+//                 break;
+//         }
+//     }
+// }
+
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 /* USER CODE END 0 */
 
 /**
@@ -333,7 +511,11 @@ int main(void)
   MX_CAN2_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+<<<<<<< HEAD
 	  HAL_GPIO_WritePin(GPIOF,GPIO_PIN_0,GPIO_PIN_SET);
+=======
+	  HAL_GPIO_WritePin(GPIOF,GPIO_PIN_0,GPIO_PIN_RESET);
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 	  HAL_GPIO_WritePin(GPIOF,GPIO_PIN_1,GPIO_PIN_SET);
     BSP_Init(BSP_DC24_LU_ON | BSP_DC24_LD_ON | BSP_DC24_RU_ON | BSP_DC24_RD_ON);
     CAN_Init(&hcan1, CAN_Motor_Call_Back);
@@ -341,30 +523,47 @@ int main(void)
 
     serialplot.Init(&huart2, 9, (char **)Variable_Assignment_List);
 
+<<<<<<< HEAD
     motor1.PID_Angle.Init(15.0f, 0.0f, 0.0f, 0.0f, 100.0f * PI, 100.0f * PI);
     motor1.PID_Omega.Init(200.0f, 100.0f, 0.0f, 0.0f, 8000.0f, 8000.0f);
     motor1.Init(&hcan1, CAN_Motor_ID_0x206, Control_Method_ANGLE, 1.0f);
 
     motor2.PID_Angle.Init(15.0f, 0.0f, 0.0f, 0.0f, 100.0f * PI, 100.0f * PI);
     motor2.PID_Omega.Init(200.0f, 100.0f, 0.0f, 0.0f, 8000.0f, 8000.0f);
+=======
+    motor1.PID_Angle.Init(15.0f, 0.0f, 0.0f, 0.0f, 200.0f * PI, 200.0f * PI);
+    motor1.PID_Omega.Init(200.0f, 100.0f, 0.0f, 0.0f, 9000.0f, 9000.0f);
+    motor1.Init(&hcan1, CAN_Motor_ID_0x206, Control_Method_ANGLE, 1.0f);
+
+    motor2.PID_Angle.Init(15.0f, 0.0f, 0.0f, 0.0f, 200.0f * PI, 200.0f * PI);
+    motor2.PID_Omega.Init(200.0f, 100.0f, 0.0f, 0.0f, 9000.0f, 9000.0f);
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
     motor2.Init(&hcan1, CAN_Motor_ID_0x207, Control_Method_ANGLE, 1.0f);
 
     motor3.PID_Angle.Init(15.0f, 0.0f, 0.0f, 0.0f, 30.0f * PI, 30.0f * PI);
     motor3.PID_Omega.Init(200.0f, 100.0f, 0.0f, 0.0f, 15000.0f, 15000.0f);
     motor3.Init(&hcan1, CAN_Motor_ID_0x205, Control_Method_ANGLE, 1.0f);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
     while (1)
     {
+<<<<<<< HEAD
       //测试电机是否能正常转动及定位置控制
+=======
+      // //测试电机是否能正常转动及定位置控制
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
       // Counter++;
       //   if(Counter >= 4000)
       //   {
       //       Counter = 0;
+<<<<<<< HEAD
       //       if(motor.Get_Target_Angle() == 18.0f * PI)		//电机转9圈，夹爪完全张合
       //       {
       //           // motor.Set_Target_Angle(0.0f);
@@ -381,6 +580,24 @@ int main(void)
       // ballpull();
       // ballgap();		
 
+=======
+      //       if(motor1.Get_Target_Angle() == 18.0f * PI)		//电机转9圈，夹爪完全张合
+      //       {
+      //           // motor.Set_Target_Angle(0.0f);
+      //           Motor2006_Rotate_0_Degree();
+      //       }
+      //       else if(motor1.Get_Target_Angle() == 0.0f)
+      //       {
+      //           // motor.Set_Target_Angle(18.0f * PI);
+      //           Motor2006_Rotate_90_Degree();
+      //       }
+      //   }
+
+      //测试气缸能否正常工作
+      // ballpush();
+      // ballpull();
+      // ballgap();		
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 		//串口绘图显示内容
         Target_Angle = motor1.Get_Target_Angle();
         Now_Angle = motor1.Get_Now_Angle();
@@ -396,12 +613,23 @@ int main(void)
 
         //通信设备回调数据
         TIM_CAN_PeriodElapsedCallback();
+<<<<<<< HEAD
+=======
+        
+        //非阻塞式气缸控制处理
+        Ball_Control_Process();
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 		
 		//UART发送数据给上位机
         TIM_UART_PeriodElapsedCallback();
 
+<<<<<<< HEAD
         //延时1ms
         HAL_Delay(0);
+=======
+        //延时1ms（避免过度频繁发送）
+        HAL_Delay(1);
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 
  
 

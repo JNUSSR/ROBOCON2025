@@ -103,7 +103,11 @@
         <bEvRecOn>1</bEvRecOn>
         <bSchkAxf>0</bSchkAxf>
         <bTchkAxf>0</bTchkAxf>
+<<<<<<< HEAD
         <nTsel>3</nTsel>
+=======
+        <nTsel>6</nTsel>
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -114,7 +118,11 @@
         <tDlgDll></tDlgDll>
         <tDlgPa></tDlgPa>
         <tIfile></tIfile>
+<<<<<<< HEAD
         <pMon>BIN\CMSIS_AGDI.dll</pMon>
+=======
+        <pMon>STLink\ST-LINKIII-KEIL_SWO.dll</pMon>
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
       </DebugOpt>
       <TargetDriverDllRegistry>
         <SetRegEntry>

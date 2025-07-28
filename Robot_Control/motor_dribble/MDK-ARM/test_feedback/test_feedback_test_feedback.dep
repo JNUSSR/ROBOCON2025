@@ -1,7 +1,11 @@
 Dependencies for Project 'test_feedback', Target 'test_feedback': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCOMPLIER506
 F (startup_stm32f427xx.s)(0x6853C5EE)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_test_feedback-IC:\Users\Lenovo\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 540" --pd "STM32F427xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f427xx.lst --xref -o test_feedback\startup_stm32f427xx.o --depend test_feedback\startup_stm32f427xx.d)
+<<<<<<< HEAD
 F (..\Core\Src\main.c)(0x685963EA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User --cpp11-I.\RTE\_test_feedback-IC:\Users\Lenovo\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="540" -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o test_feedback\main.o --omf_browse test_feedback\main.crf --depend test_feedback\main.d)
+=======
+F (..\Core\Src\main.c)(0x687C95FB)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User --cpp11-I.\RTE\_test_feedback-IC:\Users\Lenovo\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="540" -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o test_feedback\main.o --omf_browse test_feedback\main.crf --depend test_feedback\main.d)
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 I (../Core/Inc/main.h)(0x6853C5EB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x67DD844C)
 I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6853C5EB)
@@ -42,13 +46,21 @@ I (C:\Users\Lenovo\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdarg.h)(0x
 I (C:\Users\Lenovo\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\string.h)(0x5E8E3CC2)
 I (C:\Users\Lenovo\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\math.h)(0x5E8E3CC2)
 I (..\User\drv_uart.h)(0x67E2B848)
+<<<<<<< HEAD
 I (..\User\dvc_motor.h)(0x67E40B4C)
+=======
+I (..\User\dvc_motor.h)(0x687C9529)
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 I (..\User\alg_pid.h)(0x67E2ACCC)
 I (..\User\drv_math.h)(0x67E2ACDB)
 I (C:\Users\Lenovo\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\limits.h)(0x5E8E3CC2)
 I (C:\Users\Lenovo\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\float.h)(0x5E8E3CC2)
 I (..\User\drv_can.h)(0x67E2B854)
+<<<<<<< HEAD
 F (../Core/Src/gpio.c)(0x6853C5EA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User --cpp11-I.\RTE\_test_feedback-IC:\Users\Lenovo\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="540" -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o test_feedback\gpio.o --omf_browse test_feedback\gpio.crf --depend test_feedback\gpio.d)
+=======
+F (../Core/Src/gpio.c)(0x6875F30C)(--c99 -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User --cpp11-I.\RTE\_test_feedback-IC:\Users\Lenovo\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="540" -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o test_feedback\gpio.o --omf_browse test_feedback\gpio.crf --depend test_feedback\gpio.d)
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 I (../Core/Inc/gpio.h)(0x6853C5EA)
 I (../Core/Inc/main.h)(0x6853C5EB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x67DD844C)
@@ -920,8 +932,13 @@ I (C:\Users\Lenovo\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x
 I (C:\Users\Lenovo\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\limits.h)(0x5E8E3CC2)
 I (C:\Users\Lenovo\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\math.h)(0x5E8E3CC2)
 I (C:\Users\Lenovo\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\float.h)(0x5E8E3CC2)
+<<<<<<< HEAD
 F (..\User\dvc_motor.cpp)(0x67E40B44)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User --cpp11-I.\RTE\_test_feedback-IC:\Users\Lenovo\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="540" -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o test_feedback\dvc_motor.o --omf_browse test_feedback\dvc_motor.crf --depend test_feedback\dvc_motor.d)
 I (..\User\dvc_motor.h)(0x67E40B4C)
+=======
+F (..\User\dvc_motor.cpp)(0x687C9640)(--cpp -c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\User --cpp11-I.\RTE\_test_feedback-IC:\Users\Lenovo\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include-IC:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="540" -DSTM32F427xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F427xx-o test_feedback\dvc_motor.o --omf_browse test_feedback\dvc_motor.crf --depend test_feedback\dvc_motor.d)
+I (..\User\dvc_motor.h)(0x687C9529)
+>>>>>>> 1edc67784f2830cb14053f9af588562884439518
 I (..\User\alg_pid.h)(0x67E2ACCC)
 I (..\User\drv_math.h)(0x67E2ACDB)
 I (C:\Users\Lenovo\AppData\Local\Keil_v5\ARM\ARMCOMPLIER506\include\stdint.h)(0x5E8E3CC2)
