@@ -33,7 +33,8 @@ typedef struct {
     char sudu1[7];   // 速度1，截取前6个字符
     char x[7];       // X坐标，截取前6个字符
     char y[7];       // Y坐标，截取前6个字符
-    char sudu2[7];   // 速度2，截取前6个字符
+    char sudu2[7];      //速度2，截取前6个字符
+    char jiaodu[7];   // 角度，截取前6个字符
 } data_t;
 
 // ESP-NOW 状态枚举
@@ -59,7 +60,7 @@ typedef struct {
 // 字符串分隔标志
 #define START_FLAG '$'
 #define END_FLAG '#'
-#define MAX_DATA_LEN 256  // 最大数据长度
+#define MAX_DATA_LEN  320 // 最大数据长度
 
 static const char *TAG = "SERIAL_ESPNOW";
 static espnow_config_t g_espnow_config;
@@ -207,8 +208,8 @@ esp_err_t parse_data(const char *str, data_t *data)
         return ESP_ERR_INVALID_ARG;
     }
 
-    // 期望格式: "sudu1:123.4,x:567.8,y:901.2,sudu2:345.6"
-    // 或者: "123.4,567.8,901.2,345.6"
+    // 期望格式: "$sudu1:123.4,x:567.8,y:901.2,sudu2:345.6 jiaodu:1.12#"
+    // 或者: "$123.4,567.8,901.2,345.6,1.214#"
     
     char *str_copy = strdup(str);
     if (str_copy == NULL) {
@@ -254,18 +255,24 @@ esp_err_t parse_data(const char *str, data_t *data)
                 strncpy(data->sudu2, token + 6, sizeof(data->sudu2) - 1);
                 data->sudu2[sizeof(data->sudu2) - 1] = '\0';
             }
+            else if (strncmp(token, "jiaodu:", 6) == 0) {
+                // 截取前6个字符到jiaodu字段
+                strncpy(data->jiaodu, token + 6, sizeof(data->jiaodu) - 1);
+                data->jiaodu[sizeof(data->jiaodu) - 1] = '\0';
+            }
             token = strtok(NULL, ",");
         }
     } else {
         // 尝试解析简单格式 "123.4,567.8,901.2,345.6"
         const char *p = str_copy;
-        for (int idx = 0; idx < 4; idx++) {
+        for (int idx = 0; idx < 5; idx++) {
             char *field = NULL;
             switch (idx) {
                 case 0: field = data->sudu1; break;
                 case 1: field = data->x; break;
                 case 2: field = data->y; break;
                 case 3: field = data->sudu2; break;
+                case 4: field = data->jiaodu; break;
         }
             // 查找下一个逗号
             const char *comma = strchr(p, ',');
@@ -315,8 +322,8 @@ esp_err_t espnow_send_data(const data_t *data)
     } else {
         // 等待一段时间后再发送日志
         vTaskDelay(150 / portTICK_PERIOD_MS);
-        ESP_LOGI(TAG, "发送数据: sudu1=%s, x=%s, y=%s, sudu2=%s",
-                 data->sudu1, data->x, data->y, data->sudu2);
+        ESP_LOGI(TAG, "发送数据: sudu1=%s, x=%s, y=%s, sudu2=%s,jiaodu=%s",
+                 data->sudu1, data->x, data->y, data->sudu2,data->jiaodu);
     }
 
     return ret;
@@ -350,8 +357,8 @@ static void serial_task(void *arg)
 
     ESP_LOGI(TAG, "等待串口数据输入...");
     ESP_LOGI(TAG, "支持的数据格式:");
-    ESP_LOGI(TAG, "1. 带标志格式: $sudu1:123.4,x:567.8,y:901.2,sudu2:345.6#");
-    ESP_LOGI(TAG, "2. 带标签格式: sudu1:123.4,x:567.8,y:901.2,sudu2:345.6");
+    ESP_LOGI(TAG, "1. 带标志格式: $sudu1:123.4,x:567.8,y:901.2,sudu2:345.6,jiaodu:#");
+    ESP_LOGI(TAG, "2. 带标签格式: sudu1:123.4,x:567.8,y:901.2,sudu2:345.6,jiaodu:");
     ESP_LOGI(TAG, "3. 简单格式: 123.4,567.8,901.2,345.6");
     ESP_LOGI(TAG, "注意: 每个字段最多截取前6个字符");
     ESP_LOGI(TAG, "标志说明: 开始标志='%c', 结束标志='%c'", START_FLAG, END_FLAG);
@@ -374,7 +381,7 @@ static void serial_task(void *arg)
                     data_t parsed_data;
                     esp_err_t parse_ret = parse_data(extracted_data, &parsed_data);
                     if (parse_ret == ESP_OK) {
-                        ESP_LOGI(TAG, "解析结果: sudu1=%s, x=%s, y=%s, sudu2=%s", parsed_data.sudu1, parsed_data.x, parsed_data.y, parsed_data.sudu2);
+                        ESP_LOGI(TAG, "解析结果: sudu1=%s, x=%s, y=%s, sudu2=%s ,jiaodu=%s", parsed_data.sudu1, parsed_data.x, parsed_data.y, parsed_data.sudu2,parsed_data.jiaodu);
                         
                         // 设置发送未完成标志
                         g_send_completed = false;
@@ -402,8 +409,7 @@ static void serial_task(void *arg)
                     data_t parsed_data;
                     esp_err_t parse_ret = parse_data((char*)data, &parsed_data);
                     if (parse_ret == ESP_OK) {
-                        ESP_LOGI(TAG, "解析结果: sudu1=%s, x=%s, y=%s, sudu2=%s", parsed_data.sudu1, parsed_data.x, parsed_data.y, parsed_data.sudu2);
-                        
+                        ESP_LOGI(TAG, "解析结果: sudu1=%s, x=%s, y=%s, sudu2=%s,jiaodu=%s", parsed_data.sudu1, parsed_data.x, parsed_data.y, parsed_data.sudu2,parsed_data.jiaodu);
                         // 设置发送未完成标志
                         g_send_completed = false;
                         
