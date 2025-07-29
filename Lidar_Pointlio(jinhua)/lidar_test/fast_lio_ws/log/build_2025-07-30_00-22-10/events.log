@@ -1,0 +1,854 @@
+[0.000000] (-) TimerEvent: {}
+[0.000517] (fast_lio) JobQueued: {'identifier': 'fast_lio', 'dependencies': OrderedDict()}
+[0.000564] (fast_lio) JobStarted: {'identifier': 'fast_lio'}
+[0.005436] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'cmake'}
+[0.006000] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '/home/ljhua/robocon/lidar_test/fast_lio_ws/src/unilidar_fastlio_ros2', '-DCMAKE_INSTALL_PREFIX=/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio'], 'cwd': '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ljhua'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ljhua'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1509'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=feea3d9c907f94dc0a9612b66888f22d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ljhua'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ljhua'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ljhua/.local/bin:/home/ljhua/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ljhua-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:@/tmp/.ICE-unix/1509,unix/ljhua-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:/tmp/.ICE-unix/1509'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/72525e53_03f8_4a7d_8464_5a71f4e4456e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C23KA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=feea3d9c907f94dc0a9612b66888f22d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.057457] (fast_lio) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099902] (-) TimerEvent: {}
+[0.111350] (fast_lio) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.116408] (fast_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.184669] (fast_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.190417] (fast_lio) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.190648] (fast_lio) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.190983] (fast_lio) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.194014] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199971] (-) TimerEvent: {}
+[0.275588] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.284860] (fast_lio) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.285184] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.285748] (fast_lio) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.286368] (fast_lio) StderrLine: {'line': b'\x1b[0mCurrent CPU archtecture: x86_64\x1b[0m\n'}
+[0.290596] (fast_lio) StderrLine: {'line': b'\x1b[0mProcesser number:  20\x1b[0m\n'}
+[0.290737] (fast_lio) StderrLine: {'line': b'\x1b[0mcore for MP: 3\x1b[0m\n'}
+[0.300076] (-) TimerEvent: {}
+[0.400363] (-) TimerEvent: {}
+[0.500746] (-) TimerEvent: {}
+[0.601104] (-) TimerEvent: {}
+[0.656276] (fast_lio) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12") \n'}
+[0.657464] (fast_lio) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.701288] (-) TimerEvent: {}
+[0.801646] (-) TimerEvent: {}
+[0.902068] (-) TimerEvent: {}
+[1.002475] (-) TimerEvent: {}
+[1.082095] (fast_lio) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.102568] (-) TimerEvent: {}
+[1.150559] (fast_lio) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.169711] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.172287] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.176856] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.183817] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.193003] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.202804] (-) TimerEvent: {}
+[1.217696] (fast_lio) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.219031] (fast_lio) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.292646] (fast_lio) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.302913] (-) TimerEvent: {}
+[1.317995] (fast_lio) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.349681] (fast_lio) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.356082] (fast_lio) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.403088] (-) TimerEvent: {}
+[1.438617] (fast_lio) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.438848] (fast_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.503212] (-) TimerEvent: {}
+[1.524475] (fast_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.525899] (fast_lio) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.559023] (fast_lio) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[1.575042] (fast_lio) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.583194] (fast_lio) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.594020] (fast_lio) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.603256] (-) TimerEvent: {}
+[1.605810] (fast_lio) StdoutLine: {'line': b'-- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.617892] (fast_lio) StdoutLine: {'line': b'-- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.630768] (fast_lio) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[1.658771] (fast_lio) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.671679] (fast_lio) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.703363] (-) TimerEvent: {}
+[1.712389] (fast_lio) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.712577] (fast_lio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.739390] (fast_lio) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.750119] (fast_lio) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.798262] (fast_lio) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.798477] (fast_lio) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.803432] (-) TimerEvent: {}
+[1.903734] (-) TimerEvent: {}
+[2.004211] (-) TimerEvent: {}
+[2.104496] (-) TimerEvent: {}
+[2.204800] (-) TimerEvent: {}
+[2.305186] (-) TimerEvent: {}
+[2.405625] (-) TimerEvent: {}
+[2.506078] (-) TimerEvent: {}
+[2.606426] (-) TimerEvent: {}
+[2.706752] (-) TimerEvent: {}
+[2.757517] (fast_lio) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.773080] (fast_lio) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.806887] (-) TimerEvent: {}
+[2.816864] (fast_lio) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.818278] (fast_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.888151] (fast_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.906989] (-) TimerEvent: {}
+[2.999084] (fast_lio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[3.003260] (fast_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.007167] (-) TimerEvent: {}
+[3.008599] (fast_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[3.107298] (-) TimerEvent: {}
+[3.113264] (fast_lio) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[3.207382] (-) TimerEvent: {}
+[3.222996] (fast_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[3.307488] (-) TimerEvent: {}
+[3.329974] (fast_lio) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[3.330556] (fast_lio) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.331082] (fast_lio) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[3.331611] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[3.332162] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.332738] (fast_lio) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[3.332907] (fast_lio) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[3.333142] (fast_lio) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[3.333801] (fast_lio) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[3.334392] (fast_lio) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[3.335006] (fast_lio) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[3.335604] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.336338] (fast_lio) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[3.337016] (fast_lio) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[3.337591] (fast_lio) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[3.338225] (fast_lio) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.338787] (fast_lio) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[3.339323] (fast_lio) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[3.340101] (fast_lio) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[3.340680] (fast_lio) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[3.341290] (fast_lio) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[3.341413] (fast_lio) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[3.341610] (fast_lio) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[3.342433] (fast_lio) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.343060] (fast_lio) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[3.357905] (fast_lio) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[3.358779] (fast_lio) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.358857] (fast_lio) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.402847] (fast_lio) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[3.407550] (-) TimerEvent: {}
+[3.410228] (fast_lio) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:78 (find_package):\n'}
+[3.410311] (fast_lio) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[3.410348] (fast_lio) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[3.410379] (fast_lio) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[3.410408] (fast_lio) StderrLine: {'line': b'\n'}
+[3.410439] (fast_lio) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[3.410467] (fast_lio) StderrLine: {'line': b'\n'}
+[3.410494] (fast_lio) StderrLine: {'line': b'    /usr\n'}
+[3.410521] (fast_lio) StderrLine: {'line': b'\n'}
+[3.410548] (fast_lio) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[3.410583] (fast_lio) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[3.410610] (fast_lio) StderrLine: {'line': b'\x1b[0m\n'}
+[3.415332] (fast_lio) StdoutLine: {'line': b'-- PCL: /usr/include/pcl-1.12\n'}
+[3.415408] (fast_lio) StderrLine: {'line': b'\x1b[0mEigen:/usr/include/eigen3\x1b[0m\n'}
+[3.507638] (-) TimerEvent: {}
+[3.600527] (fast_lio) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[3.607780] (-) TimerEvent: {}
+[3.708154] (-) TimerEvent: {}
+[3.808446] (-) TimerEvent: {}
+[3.845639] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.908553] (-) TimerEvent: {}
+[3.966044] (fast_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.988537] (fast_lio) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[3.989763] (fast_lio) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.006126] (fast_lio) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[4.006206] (fast_lio) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.006241] (fast_lio) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[4.006278] (fast_lio) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[4.008612] (-) TimerEvent: {}
+[4.022209] (fast_lio) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.065620] (fast_lio) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.108700] (-) TimerEvent: {}
+[4.118736] (fast_lio) StdoutLine: {'line': b'-- Generating done\n'}
+[4.134862] (fast_lio) StdoutLine: {'line': b'-- Build files have been written to: /home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio\n'}
+[4.148137] (fast_lio) CommandEnded: {'returncode': 0}
+[4.148417] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'build'}
+[4.150180] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio', '--', '-j20', '-l20'], 'cwd': '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ljhua'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ljhua'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1509'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=feea3d9c907f94dc0a9612b66888f22d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ljhua'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ljhua'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ljhua/.local/bin:/home/ljhua/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ljhua-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:@/tmp/.ICE-unix/1509,unix/ljhua-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:/tmp/.ICE-unix/1509'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/72525e53_03f8_4a7d_8464_5a71f4e4456e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C23KA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=feea3d9c907f94dc0a9612b66888f22d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.194424] (fast_lio) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.204697] (fast_lio) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.208836] (-) TimerEvent: {}
+[4.211790] (fast_lio) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/odometry_to_tf.dir/src/odometry_to_tf.cpp.o\x1b[0m\n'}
+[4.216488] (fast_lio) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_copy_fast_lio\n'}
+[4.309037] (-) TimerEvent: {}
+[4.405338] (fast_lio) StdoutLine: {'line': b'[  8%] Built target fast_lio__cpp\n'}
+[4.409209] (-) TimerEvent: {}
+[4.413247] (fast_lio) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.413366] (fast_lio) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.414633] (fast_lio) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_c.dir/rosidl_generator_c/fast_lio/msg/detail/pose6_d__functions.c.o\x1b[0m\n'}
+[4.415392] (fast_lio) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.420911] (fast_lio) StdoutLine: {'line': b'running egg_info\n'}
+[4.421488] (fast_lio) StdoutLine: {'line': b'creating fast_lio.egg-info\n'}
+[4.429174] (fast_lio) StdoutLine: {'line': b'writing fast_lio.egg-info/PKG-INFO\n'}
+[4.429379] (fast_lio) StdoutLine: {'line': b'writing dependency_links to fast_lio.egg-info/dependency_links.txt\n'}
+[4.429582] (fast_lio) StdoutLine: {'line': b'writing top-level names to fast_lio.egg-info/top_level.txt\n'}
+[4.429653] (fast_lio) StdoutLine: {'line': b"writing manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[4.453603] (fast_lio) StdoutLine: {'line': b"reading manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[4.453983] (fast_lio) StdoutLine: {'line': b"writing manifest file 'fast_lio.egg-info/SOURCES.txt'\n"}
+[4.483497] (fast_lio) StdoutLine: {'line': b'[ 18%] Built target ament_cmake_python_build_fast_lio_egg\n'}
+[4.494546] (fast_lio) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking C shared library libfast_lio__rosidl_generator_c.so\x1b[0m\n'}
+[4.509362] (-) TimerEvent: {}
+[4.524009] (fast_lio) StdoutLine: {'line': b'[ 21%] Built target fast_lio__rosidl_generator_c\n'}
+[4.533902] (fast_lio) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.534078] (fast_lio) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.534171] (fast_lio) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[4.600362] (fast_lio) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fast_lio/msg/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[4.609459] (-) TimerEvent: {}
+[4.619838] (fast_lio) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fast_lio/msg/detail/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[4.628095] (fast_lio) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fast_lio/msg/detail/dds_fastrtps/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[4.709553] (-) TimerEvent: {}
+[4.740594] (fast_lio) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_c.dir/rosidl_typesupport_c/fast_lio/msg/pose6_d__type_support.cpp.o\x1b[0m\n'}
+[4.760269] (fast_lio) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fast_lio/msg/detail/pose6_d__type_support.c.o\x1b[0m\n'}
+[4.764760] (fast_lio) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.765720] (fast_lio) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.798838] (fast_lio) StdoutLine: {'line': b'[ 48%] Built target fast_lio__rosidl_typesupport_cpp\n'}
+[4.799068] (fast_lio) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__type_support_c.cpp.o\x1b[0m\n'}
+[4.807002] (fast_lio) StdoutLine: {'line': b'[ 51%] Built target fast_lio__rosidl_typesupport_c\n'}
+[4.809635] (-) TimerEvent: {}
+[4.817409] (fast_lio) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/laserMapping.cpp.o\x1b[0m\n'}
+[4.817974] (fast_lio) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking C shared library libfast_lio__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.820213] (fast_lio) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o\x1b[0m\n'}
+[4.820711] (fast_lio) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/preprocess.cpp.o\x1b[0m\n'}
+[4.848985] (fast_lio) StdoutLine: {'line': b'[ 62%] Built target fast_lio__rosidl_typesupport_introspection_c\n'}
+[4.868920] (fast_lio) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.897261] (fast_lio) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.898870] (fast_lio) StdoutLine: {'line': b'[ 67%] Built target fast_lio__rosidl_typesupport_introspection_cpp\n'}
+[4.909739] (-) TimerEvent: {}
+[4.953642] (fast_lio) StdoutLine: {'line': b'[ 67%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp\n'}
+[5.009523] (fast_lio) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.009803] (-) TimerEvent: {}
+[5.076521] (fast_lio) StdoutLine: {'line': b'[ 70%] Built target fast_lio__rosidl_typesupport_fastrtps_c\n'}
+[5.096871] (fast_lio) StdoutLine: {'line': b'[ 70%] Built target fast_lio\n'}
+[5.109920] (-) TimerEvent: {}
+[5.116968] (fast_lio) StdoutLine: {'line': b'[ 72%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.210048] (-) TimerEvent: {}
+[5.310379] (-) TimerEvent: {}
+[5.398432] (fast_lio) StdoutLine: {'line': b'[ 72%] Built target fast_lio__py\n'}
+[5.410482] (-) TimerEvent: {}
+[5.418561] (fast_lio) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_py.dir/rosidl_generator_py/fast_lio/msg/_pose6_d_s.c.o\x1b[0m\n'}
+[5.510590] (-) TimerEvent: {}
+[5.513578] (fast_lio) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/libfast_lio__rosidl_generator_py.so\x1b[0m\n'}
+[5.550110] (fast_lio) StdoutLine: {'line': b'[ 78%] Built target fast_lio__rosidl_generator_py\n'}
+[5.569501] (fast_lio) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.570385] (fast_lio) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.570549] (fast_lio) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.610695] (-) TimerEvent: {}
+[5.646209] (fast_lio) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.648614] (fast_lio) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.673391] (fast_lio) StdoutLine: {'line': b'[ 91%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.679977] (fast_lio) StdoutLine: {'line': b'[ 91%] Built target fast_lio__rosidl_typesupport_c__pyext\n'}
+[5.692957] (fast_lio) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.710804] (-) TimerEvent: {}
+[5.722552] (fast_lio) StdoutLine: {'line': b'[ 94%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext\n'}
+[5.811011] (-) TimerEvent: {}
+[5.911431] (-) TimerEvent: {}
+[6.011756] (-) TimerEvent: {}
+[6.112133] (-) TimerEvent: {}
+[6.212411] (-) TimerEvent: {}
+[6.312735] (-) TimerEvent: {}
+[6.413104] (-) TimerEvent: {}
+[6.513370] (-) TimerEvent: {}
+[6.613662] (-) TimerEvent: {}
+[6.713956] (-) TimerEvent: {}
+[6.814379] (-) TimerEvent: {}
+[6.914728] (-) TimerEvent: {}
+[7.015154] (-) TimerEvent: {}
+[7.115586] (-) TimerEvent: {}
+[7.215979] (-) TimerEvent: {}
+[7.316283] (-) TimerEvent: {}
+[7.416598] (-) TimerEvent: {}
+[7.516816] (-) TimerEvent: {}
+[7.617183] (-) TimerEvent: {}
+[7.717522] (-) TimerEvent: {}
+[7.817861] (-) TimerEvent: {}
+[7.918228] (-) TimerEvent: {}
+[8.018585] (-) TimerEvent: {}
+[8.118922] (-) TimerEvent: {}
+[8.219258] (-) TimerEvent: {}
+[8.319591] (-) TimerEvent: {}
+[8.419913] (-) TimerEvent: {}
+[8.520259] (-) TimerEvent: {}
+[8.620523] (-) TimerEvent: {}
+[8.687167] (fast_lio) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22\x1b[m\x1b[K,\n'}
+[8.687317] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23\x1b[m\x1b[K,\n'}
+[8.687358] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14\x1b[m\x1b[K,\n'}
+[8.687388] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42\x1b[m\x1b[K,\n'}
+[8.687416] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25\x1b[m\x1b[K,\n'}
+[8.687444] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29\x1b[m\x1b[K,\n'}
+[8.687470] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/shared_ptr.hpp:17\x1b[m\x1b[K,\n'}
+[8.687496] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/date_time/microsec_time_clock.hpp:18\x1b[m\x1b[K,\n'}
+[8.687522] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:31\x1b[m\x1b[K,\n'}
+[8.687549] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/interprocess/detail/os_thread_functions.hpp:36\x1b[m\x1b[K,\n'}
+[8.687575] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/boost/interprocess/sync/file_lock.hpp:26\x1b[m\x1b[K,\n'}
+[8.687601] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:46\x1b[m\x1b[K,\n'}
+[8.687626] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:73\x1b[m\x1b[K,\n'}
+[8.687652] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ljhua/robocon/lidar_test/fast_lio_ws/src/unilidar_fastlio_ros2/src/IMU_Processing.hpp:18\x1b[m\x1b[K,\n'}
+[8.687677] (fast_lio) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ljhua/robocon/lidar_test/fast_lio_ws/src/unilidar_fastlio_ros2/src/laserMapping.cpp:47\x1b[m\x1b[K:\n'}
+[8.687702] (fast_lio) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.687734] (fast_lio) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[8.687761] (fast_lio) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.720616] (-) TimerEvent: {}
+[8.820947] (-) TimerEvent: {}
+[8.921295] (-) TimerEvent: {}
+[9.021514] (-) TimerEvent: {}
+[9.121767] (-) TimerEvent: {}
+[9.222092] (-) TimerEvent: {}
+[9.322440] (-) TimerEvent: {}
+[9.422778] (-) TimerEvent: {}
+[9.523103] (-) TimerEvent: {}
+[9.623400] (-) TimerEvent: {}
+[9.723622] (-) TimerEvent: {}
+[9.823951] (-) TimerEvent: {}
+[9.924291] (-) TimerEvent: {}
+[10.024509] (-) TimerEvent: {}
+[10.124849] (-) TimerEvent: {}
+[10.225185] (-) TimerEvent: {}
+[10.325539] (-) TimerEvent: {}
+[10.425876] (-) TimerEvent: {}
+[10.526238] (-) TimerEvent: {}
+[10.626584] (-) TimerEvent: {}
+[10.726926] (-) TimerEvent: {}
+[10.795629] (fast_lio) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable odometry_to_tf\x1b[0m\n'}
+[10.827132] (-) TimerEvent: {}
+[10.927396] (-) TimerEvent: {}
+[11.027729] (-) TimerEvent: {}
+[11.096605] (fast_lio) StdoutLine: {'line': b'[ 97%] Built target odometry_to_tf\n'}
+[11.127934] (-) TimerEvent: {}
+[11.228287] (-) TimerEvent: {}
+[11.328612] (-) TimerEvent: {}
+[11.428970] (-) TimerEvent: {}
+[11.529307] (-) TimerEvent: {}
+[11.629529] (-) TimerEvent: {}
+[11.729858] (-) TimerEvent: {}
+[11.830077] (-) TimerEvent: {}
+[11.930355] (-) TimerEvent: {}
+[12.030578] (-) TimerEvent: {}
+[12.130838] (-) TimerEvent: {}
+[12.231105] (-) TimerEvent: {}
+[12.331425] (-) TimerEvent: {}
+[12.431765] (-) TimerEvent: {}
+[12.532089] (-) TimerEvent: {}
+[12.632332] (-) TimerEvent: {}
+[12.732560] (-) TimerEvent: {}
+[12.832801] (-) TimerEvent: {}
+[12.933124] (-) TimerEvent: {}
+[13.033363] (-) TimerEvent: {}
+[13.133579] (-) TimerEvent: {}
+[13.233833] (-) TimerEvent: {}
+[13.334049] (-) TimerEvent: {}
+[13.434271] (-) TimerEvent: {}
+[13.534529] (-) TimerEvent: {}
+[13.634809] (-) TimerEvent: {}
+[13.735091] (-) TimerEvent: {}
+[13.835400] (-) TimerEvent: {}
+[13.935749] (-) TimerEvent: {}
+[14.036082] (-) TimerEvent: {}
+[14.136457] (-) TimerEvent: {}
+[14.236799] (-) TimerEvent: {}
+[14.337134] (-) TimerEvent: {}
+[14.437419] (-) TimerEvent: {}
+[14.537641] (-) TimerEvent: {}
+[14.637861] (-) TimerEvent: {}
+[14.738073] (-) TimerEvent: {}
+[14.838291] (-) TimerEvent: {}
+[14.938516] (-) TimerEvent: {}
+[15.038763] (-) TimerEvent: {}
+[15.139100] (-) TimerEvent: {}
+[15.239426] (-) TimerEvent: {}
+[15.339705] (-) TimerEvent: {}
+[15.440049] (-) TimerEvent: {}
+[15.540314] (-) TimerEvent: {}
+[15.640549] (-) TimerEvent: {}
+[15.740835] (-) TimerEvent: {}
+[15.841178] (-) TimerEvent: {}
+[15.941411] (-) TimerEvent: {}
+[16.041642] (-) TimerEvent: {}
+[16.141975] (-) TimerEvent: {}
+[16.242363] (-) TimerEvent: {}
+[16.342692] (-) TimerEvent: {}
+[16.443062] (-) TimerEvent: {}
+[16.543397] (-) TimerEvent: {}
+[16.643752] (-) TimerEvent: {}
+[16.744098] (-) TimerEvent: {}
+[16.844449] (-) TimerEvent: {}
+[16.944777] (-) TimerEvent: {}
+[17.045144] (-) TimerEvent: {}
+[17.145460] (-) TimerEvent: {}
+[17.245825] (-) TimerEvent: {}
+[17.346199] (-) TimerEvent: {}
+[17.446628] (-) TimerEvent: {}
+[17.546900] (-) TimerEvent: {}
+[17.647241] (-) TimerEvent: {}
+[17.747490] (-) TimerEvent: {}
+[17.847765] (-) TimerEvent: {}
+[17.948024] (-) TimerEvent: {}
+[18.048357] (-) TimerEvent: {}
+[18.148596] (-) TimerEvent: {}
+[18.248867] (-) TimerEvent: {}
+[18.349206] (-) TimerEvent: {}
+[18.449446] (-) TimerEvent: {}
+[18.549669] (-) TimerEvent: {}
+[18.649931] (-) TimerEvent: {}
+[18.750294] (-) TimerEvent: {}
+[18.850643] (-) TimerEvent: {}
+[18.950904] (-) TimerEvent: {}
+[19.051241] (-) TimerEvent: {}
+[19.151476] (-) TimerEvent: {}
+[19.251756] (-) TimerEvent: {}
+[19.352012] (-) TimerEvent: {}
+[19.452294] (-) TimerEvent: {}
+[19.552516] (-) TimerEvent: {}
+[19.652737] (-) TimerEvent: {}
+[19.752994] (-) TimerEvent: {}
+[19.853257] (-) TimerEvent: {}
+[19.953484] (-) TimerEvent: {}
+[20.053764] (-) TimerEvent: {}
+[20.154016] (-) TimerEvent: {}
+[20.254355] (-) TimerEvent: {}
+[20.354573] (-) TimerEvent: {}
+[20.454822] (-) TimerEvent: {}
+[20.555157] (-) TimerEvent: {}
+[20.655444] (-) TimerEvent: {}
+[20.755717] (-) TimerEvent: {}
+[20.855991] (-) TimerEvent: {}
+[20.956257] (-) TimerEvent: {}
+[21.056488] (-) TimerEvent: {}
+[21.156714] (-) TimerEvent: {}
+[21.256946] (-) TimerEvent: {}
+[21.357168] (-) TimerEvent: {}
+[21.457508] (-) TimerEvent: {}
+[21.557781] (-) TimerEvent: {}
+[21.658050] (-) TimerEvent: {}
+[21.758395] (-) TimerEvent: {}
+[21.858650] (-) TimerEvent: {}
+[21.958928] (-) TimerEvent: {}
+[22.059258] (-) TimerEvent: {}
+[22.159480] (-) TimerEvent: {}
+[22.259706] (-) TimerEvent: {}
+[22.360029] (-) TimerEvent: {}
+[22.460260] (-) TimerEvent: {}
+[22.560481] (-) TimerEvent: {}
+[22.660751] (-) TimerEvent: {}
+[22.761036] (-) TimerEvent: {}
+[22.861317] (-) TimerEvent: {}
+[22.961534] (-) TimerEvent: {}
+[23.061791] (-) TimerEvent: {}
+[23.162067] (-) TimerEvent: {}
+[23.262350] (-) TimerEvent: {}
+[23.362595] (-) TimerEvent: {}
+[23.462849] (-) TimerEvent: {}
+[23.563110] (-) TimerEvent: {}
+[23.663413] (-) TimerEvent: {}
+[23.763780] (-) TimerEvent: {}
+[23.864090] (-) TimerEvent: {}
+[23.964365] (-) TimerEvent: {}
+[24.064605] (-) TimerEvent: {}
+[24.164839] (-) TimerEvent: {}
+[24.265111] (-) TimerEvent: {}
+[24.365296] (-) TimerEvent: {}
+[24.465526] (-) TimerEvent: {}
+[24.565762] (-) TimerEvent: {}
+[24.666149] (-) TimerEvent: {}
+[24.766428] (-) TimerEvent: {}
+[24.866695] (-) TimerEvent: {}
+[24.966926] (-) TimerEvent: {}
+[25.067281] (-) TimerEvent: {}
+[25.167523] (-) TimerEvent: {}
+[25.267796] (-) TimerEvent: {}
+[25.368159] (-) TimerEvent: {}
+[25.468407] (-) TimerEvent: {}
+[25.568634] (-) TimerEvent: {}
+[25.668959] (-) TimerEvent: {}
+[25.769308] (-) TimerEvent: {}
+[25.869557] (-) TimerEvent: {}
+[25.969975] (-) TimerEvent: {}
+[26.070319] (-) TimerEvent: {}
+[26.170569] (-) TimerEvent: {}
+[26.270848] (-) TimerEvent: {}
+[26.371100] (-) TimerEvent: {}
+[26.471408] (-) TimerEvent: {}
+[26.571629] (-) TimerEvent: {}
+[26.671884] (-) TimerEvent: {}
+[26.772223] (-) TimerEvent: {}
+[26.872463] (-) TimerEvent: {}
+[26.972713] (-) TimerEvent: {}
+[27.072942] (-) TimerEvent: {}
+[27.173172] (-) TimerEvent: {}
+[27.273442] (-) TimerEvent: {}
+[27.373838] (-) TimerEvent: {}
+[27.474195] (-) TimerEvent: {}
+[27.574428] (-) TimerEvent: {}
+[27.674797] (-) TimerEvent: {}
+[27.775148] (-) TimerEvent: {}
+[27.875513] (-) TimerEvent: {}
+[27.975791] (-) TimerEvent: {}
+[28.076134] (-) TimerEvent: {}
+[28.176416] (-) TimerEvent: {}
+[28.276761] (-) TimerEvent: {}
+[28.377003] (-) TimerEvent: {}
+[28.477272] (-) TimerEvent: {}
+[28.577499] (-) TimerEvent: {}
+[28.677765] (-) TimerEvent: {}
+[28.777999] (-) TimerEvent: {}
+[28.878287] (-) TimerEvent: {}
+[28.978668] (-) TimerEvent: {}
+[29.079003] (-) TimerEvent: {}
+[29.179293] (-) TimerEvent: {}
+[29.279637] (-) TimerEvent: {}
+[29.379962] (-) TimerEvent: {}
+[29.480389] (-) TimerEvent: {}
+[29.580733] (-) TimerEvent: {}
+[29.681131] (-) TimerEvent: {}
+[29.781506] (-) TimerEvent: {}
+[29.881841] (-) TimerEvent: {}
+[29.982262] (-) TimerEvent: {}
+[30.082741] (-) TimerEvent: {}
+[30.183112] (-) TimerEvent: {}
+[30.283304] (-) TimerEvent: {}
+[30.383535] (-) TimerEvent: {}
+[30.483797] (-) TimerEvent: {}
+[30.584052] (-) TimerEvent: {}
+[30.684398] (-) TimerEvent: {}
+[30.784660] (-) TimerEvent: {}
+[30.884995] (-) TimerEvent: {}
+[30.985343] (-) TimerEvent: {}
+[31.085570] (-) TimerEvent: {}
+[31.185828] (-) TimerEvent: {}
+[31.286092] (-) TimerEvent: {}
+[31.386330] (-) TimerEvent: {}
+[31.486551] (-) TimerEvent: {}
+[31.586819] (-) TimerEvent: {}
+[31.687157] (-) TimerEvent: {}
+[31.787408] (-) TimerEvent: {}
+[31.887754] (-) TimerEvent: {}
+[31.988091] (-) TimerEvent: {}
+[32.088335] (-) TimerEvent: {}
+[32.188681] (-) TimerEvent: {}
+[32.288965] (-) TimerEvent: {}
+[32.389346] (-) TimerEvent: {}
+[32.489585] (-) TimerEvent: {}
+[32.589854] (-) TimerEvent: {}
+[32.690193] (-) TimerEvent: {}
+[32.790582] (-) TimerEvent: {}
+[32.890866] (-) TimerEvent: {}
+[32.991210] (-) TimerEvent: {}
+[33.091472] (-) TimerEvent: {}
+[33.191732] (-) TimerEvent: {}
+[33.292068] (-) TimerEvent: {}
+[33.392420] (-) TimerEvent: {}
+[33.492712] (-) TimerEvent: {}
+[33.593046] (-) TimerEvent: {}
+[33.693393] (-) TimerEvent: {}
+[33.793656] (-) TimerEvent: {}
+[33.894008] (-) TimerEvent: {}
+[33.994344] (-) TimerEvent: {}
+[34.094680] (-) TimerEvent: {}
+[34.194920] (-) TimerEvent: {}
+[34.295399] (-) TimerEvent: {}
+[34.395737] (-) TimerEvent: {}
+[34.496161] (-) TimerEvent: {}
+[34.596487] (-) TimerEvent: {}
+[34.696710] (-) TimerEvent: {}
+[34.797081] (-) TimerEvent: {}
+[34.897293] (-) TimerEvent: {}
+[34.997518] (-) TimerEvent: {}
+[35.097751] (-) TimerEvent: {}
+[35.198086] (-) TimerEvent: {}
+[35.298430] (-) TimerEvent: {}
+[35.398702] (-) TimerEvent: {}
+[35.498969] (-) TimerEvent: {}
+[35.599203] (-) TimerEvent: {}
+[35.699424] (-) TimerEvent: {}
+[35.799657] (-) TimerEvent: {}
+[35.899919] (-) TimerEvent: {}
+[36.000251] (-) TimerEvent: {}
+[36.100482] (-) TimerEvent: {}
+[36.200745] (-) TimerEvent: {}
+[36.300998] (-) TimerEvent: {}
+[36.401351] (-) TimerEvent: {}
+[36.501578] (-) TimerEvent: {}
+[36.601829] (-) TimerEvent: {}
+[36.702052] (-) TimerEvent: {}
+[36.802313] (-) TimerEvent: {}
+[36.902546] (-) TimerEvent: {}
+[37.002817] (-) TimerEvent: {}
+[37.103154] (-) TimerEvent: {}
+[37.203420] (-) TimerEvent: {}
+[37.303647] (-) TimerEvent: {}
+[37.403896] (-) TimerEvent: {}
+[37.504133] (-) TimerEvent: {}
+[37.604359] (-) TimerEvent: {}
+[37.704579] (-) TimerEvent: {}
+[37.804817] (-) TimerEvent: {}
+[37.905066] (-) TimerEvent: {}
+[38.005331] (-) TimerEvent: {}
+[38.105551] (-) TimerEvent: {}
+[38.205809] (-) TimerEvent: {}
+[38.306073] (-) TimerEvent: {}
+[38.406331] (-) TimerEvent: {}
+[38.506585] (-) TimerEvent: {}
+[38.606846] (-) TimerEvent: {}
+[38.707176] (-) TimerEvent: {}
+[38.807402] (-) TimerEvent: {}
+[38.907752] (-) TimerEvent: {}
+[39.007975] (-) TimerEvent: {}
+[39.108236] (-) TimerEvent: {}
+[39.208467] (-) TimerEvent: {}
+[39.308721] (-) TimerEvent: {}
+[39.408982] (-) TimerEvent: {}
+[39.509232] (-) TimerEvent: {}
+[39.609460] (-) TimerEvent: {}
+[39.709683] (-) TimerEvent: {}
+[39.810023] (-) TimerEvent: {}
+[39.910298] (-) TimerEvent: {}
+[40.010514] (-) TimerEvent: {}
+[40.110770] (-) TimerEvent: {}
+[40.211052] (-) TimerEvent: {}
+[40.311510] (-) TimerEvent: {}
+[40.411736] (-) TimerEvent: {}
+[40.512094] (-) TimerEvent: {}
+[40.612345] (-) TimerEvent: {}
+[40.712567] (-) TimerEvent: {}
+[40.812782] (-) TimerEvent: {}
+[40.913052] (-) TimerEvent: {}
+[41.013324] (-) TimerEvent: {}
+[41.113543] (-) TimerEvent: {}
+[41.213769] (-) TimerEvent: {}
+[41.314133] (-) TimerEvent: {}
+[41.414402] (-) TimerEvent: {}
+[41.514627] (-) TimerEvent: {}
+[41.614960] (-) TimerEvent: {}
+[41.715299] (-) TimerEvent: {}
+[41.815522] (-) TimerEvent: {}
+[41.915779] (-) TimerEvent: {}
+[42.016110] (-) TimerEvent: {}
+[42.116422] (-) TimerEvent: {}
+[42.216677] (-) TimerEvent: {}
+[42.316924] (-) TimerEvent: {}
+[42.417180] (-) TimerEvent: {}
+[42.517412] (-) TimerEvent: {}
+[42.617688] (-) TimerEvent: {}
+[42.718019] (-) TimerEvent: {}
+[42.818277] (-) TimerEvent: {}
+[42.918626] (-) TimerEvent: {}
+[43.018884] (-) TimerEvent: {}
+[43.119213] (-) TimerEvent: {}
+[43.219437] (-) TimerEvent: {}
+[43.319682] (-) TimerEvent: {}
+[43.419926] (-) TimerEvent: {}
+[43.520140] (-) TimerEvent: {}
+[43.620358] (-) TimerEvent: {}
+[43.720599] (-) TimerEvent: {}
+[43.820845] (-) TimerEvent: {}
+[43.921091] (-) TimerEvent: {}
+[44.021297] (-) TimerEvent: {}
+[44.121519] (-) TimerEvent: {}
+[44.221765] (-) TimerEvent: {}
+[44.322020] (-) TimerEvent: {}
+[44.422238] (-) TimerEvent: {}
+[44.522468] (-) TimerEvent: {}
+[44.622730] (-) TimerEvent: {}
+[44.722955] (-) TimerEvent: {}
+[44.823225] (-) TimerEvent: {}
+[44.923469] (-) TimerEvent: {}
+[45.023722] (-) TimerEvent: {}
+[45.124046] (-) TimerEvent: {}
+[45.224398] (-) TimerEvent: {}
+[45.324651] (-) TimerEvent: {}
+[45.424977] (-) TimerEvent: {}
+[45.525297] (-) TimerEvent: {}
+[45.625515] (-) TimerEvent: {}
+[45.725733] (-) TimerEvent: {}
+[45.825976] (-) TimerEvent: {}
+[45.926204] (-) TimerEvent: {}
+[46.026434] (-) TimerEvent: {}
+[46.126680] (-) TimerEvent: {}
+[46.226924] (-) TimerEvent: {}
+[46.327263] (-) TimerEvent: {}
+[46.427496] (-) TimerEvent: {}
+[46.527892] (-) TimerEvent: {}
+[46.628197] (-) TimerEvent: {}
+[46.728542] (-) TimerEvent: {}
+[46.828869] (-) TimerEvent: {}
+[46.929300] (-) TimerEvent: {}
+[47.029578] (-) TimerEvent: {}
+[47.129893] (-) TimerEvent: {}
+[47.230216] (-) TimerEvent: {}
+[47.330542] (-) TimerEvent: {}
+[47.430814] (-) TimerEvent: {}
+[47.531091] (-) TimerEvent: {}
+[47.631381] (-) TimerEvent: {}
+[47.731668] (-) TimerEvent: {}
+[47.831986] (-) TimerEvent: {}
+[47.932314] (-) TimerEvent: {}
+[48.032774] (-) TimerEvent: {}
+[48.133081] (-) TimerEvent: {}
+[48.233432] (-) TimerEvent: {}
+[48.333760] (-) TimerEvent: {}
+[48.434117] (-) TimerEvent: {}
+[48.534477] (-) TimerEvent: {}
+[48.634782] (-) TimerEvent: {}
+[48.735005] (-) TimerEvent: {}
+[48.835378] (-) TimerEvent: {}
+[48.935628] (-) TimerEvent: {}
+[48.978519] (fast_lio) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable fastlio_mapping\x1b[0m\n'}
+[49.035717] (-) TimerEvent: {}
+[49.136051] (-) TimerEvent: {}
+[49.236400] (-) TimerEvent: {}
+[49.336640] (-) TimerEvent: {}
+[49.436892] (-) TimerEvent: {}
+[49.537140] (-) TimerEvent: {}
+[49.637369] (-) TimerEvent: {}
+[49.697948] (fast_lio) StdoutLine: {'line': b'[100%] Built target fastlio_mapping\n'}
+[49.707920] (fast_lio) CommandEnded: {'returncode': 0}
+[49.708678] (fast_lio) JobProgress: {'identifier': 'fast_lio', 'progress': 'install'}
+[49.717257] (fast_lio) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio'], 'cwd': '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ljhua'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ljhua'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1509'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=feea3d9c907f94dc0a9612b66888f22d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ljhua'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ljhua'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ljhua/.local/bin:/home/ljhua/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ljhua-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:@/tmp/.ICE-unix/1509,unix/ljhua-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:/tmp/.ICE-unix/1509'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/72525e53_03f8_4a7d_8464_5a71f4e4456e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C23KA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=feea3d9c907f94dc0a9612b66888f22d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[49.724860] (fast_lio) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[49.725079] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio\n'}
+[49.725158] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio\n'}
+[49.725264] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[49.725386] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h\n'}
+[49.725492] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[49.725554] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h\n'}
+[49.725614] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h\n'}
+[49.725671] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h\n'}
+[49.725773] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.c\n'}
+[49.725835] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h\n'}
+[49.725895] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/library_path.sh\n'}
+[49.725986] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/library_path.dsv\n'}
+[49.726042] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so\n'}
+[49.726238] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so" to ""\n'}
+[49.726351] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio\n'}
+[49.726418] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[49.726516] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[49.726577] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[49.726636] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h\n'}
+[49.726720] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so\n'}
+[49.726855] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[49.726956] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio\n'}
+[49.727014] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[49.727099] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[49.727186] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[49.727255] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.hpp\n'}
+[49.727320] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp\n'}
+[49.727411] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp\n'}
+[49.727471] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp\n'}
+[49.727567] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp\n'}
+[49.727635] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio\n'}
+[49.727749] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[49.727818] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[49.727883] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[49.727948] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/dds_fastrtps\n'}
+[49.728086] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[49.728159] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so\n'}
+[49.728283] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[49.728406] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio\n'}
+[49.728469] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[49.728535] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[49.728642] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[49.728705] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h\n'}
+[49.728767] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.c\n'}
+[49.728861] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so\n'}
+[49.729019] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so" to ""\n'}
+[49.729116] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so\n'}
+[49.729336] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so" to ""\n'}
+[49.729445] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio\n'}
+[49.729536] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg\n'}
+[49.729596] (fast_lio) StdoutLine: {'line': b'-- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail\n'}
+[49.729662] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.cpp\n'}
+[49.729761] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[49.729823] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so\n'}
+[49.729942] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[49.730029] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so\n'}
+[49.730239] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so" to ""\n'}
+[49.730329] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/pythonpath.sh\n'}
+[49.730408] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/pythonpath.dsv\n'}
+[49.730497] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info\n'}
+[49.730638] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[49.730716] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[49.730789] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[49.730862] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[49.730949] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio\n'}
+[49.731023] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[49.731093] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[49.731168] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[49.731265] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[49.731350] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg\n'}
+[49.731419] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py\n'}
+[49.731482] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py\n'}
+[49.731547] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c\n'}
+[49.731616] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py\n'}
+[49.731678] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c\n'}
+[49.731747] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[49.731826] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so\n'}
+[49.737437] (-) TimerEvent: {}
+[49.775382] (fast_lio) StdoutLine: {'line': b"Listing '/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...\n"}
+[49.775657] (fast_lio) StdoutLine: {'line': b"Compiling '/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py'...\n"}
+[49.775743] (fast_lio) StdoutLine: {'line': b"Listing '/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...\n"}
+[49.775816] (fast_lio) StdoutLine: {'line': b"Compiling '/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py'...\n"}
+[49.775880] (fast_lio) StdoutLine: {'line': b"Compiling '/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py'...\n"}
+[49.783295] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[49.783882] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[49.784130] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[49.784513] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[49.784692] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[49.784948] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[49.785101] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so\n'}
+[49.785178] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so" to ""\n'}
+[49.785434] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/msg/Pose6D.idl\n'}
+[49.785622] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/msg/Pose6D.msg\n'}
+[49.785710] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/fast_lio/fastlio_mapping\n'}
+[49.787412] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/fast_lio/fastlio_mapping" to ""\n'}
+[49.787619] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/fast_lio/odometry_to_tf\n'}
+[49.788537] (fast_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/fast_lio/odometry_to_tf" to ""\n'}
+[49.788771] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config\n'}
+[49.788873] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config/avia.yaml\n'}
+[49.789064] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config/horizon.yaml\n'}
+[49.789200] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config/mid360.yaml\n'}
+[49.789415] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config/unilidar_l2.yaml\n'}
+[49.789515] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config/velodyne.yaml\n'}
+[49.789599] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config/ouster64.yaml\n'}
+[49.789683] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/launch\n'}
+[49.789767] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/launch/mapping.launch.py\n'}
+[49.789849] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/launch/gdb_debug_example.launch\n'}
+[49.789979] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/rviz\n'}
+[49.790192] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/rviz/fastlio.rviz\n'}
+[49.790514] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio\n'}
+[49.790880] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio\n'}
+[49.790987] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.sh\n'}
+[49.791137] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv\n'}
+[49.791276] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/path.sh\n'}
+[49.791391] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/path.dsv\n'}
+[49.791573] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/local_setup.bash\n'}
+[49.791725] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/local_setup.sh\n'}
+[49.791805] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/local_setup.zsh\n'}
+[49.791882] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/local_setup.dsv\n'}
+[49.792008] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/package.dsv\n'}
+[49.792085] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/ament_index/resource_index/packages/fast_lio\n'}
+[49.792186] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake\n'}
+[49.792329] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake\n'}
+[49.792476] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[49.792609] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[49.792746] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake\n'}
+[49.792880] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[49.793011] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[49.793147] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake\n'}
+[49.793288] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[49.793455] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake\n'}
+[49.793605] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake\n'}
+[49.793748] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[49.793888] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[49.794037] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake\n'}
+[49.794177] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake\n'}
+[49.794335] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake\n'}
+[49.794470] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake\n'}
+[49.794600] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake\n'}
+[49.794729] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[49.794873] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[49.795014] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[49.795155] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[49.795301] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[49.795442] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[49.795595] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake\n'}
+[49.795706] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake\n'}
+[49.795824] (fast_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/package.xml\n'}
+[49.799115] (fast_lio) CommandEnded: {'returncode': 0}
+[49.825791] (fast_lio) JobEnded: {'identifier': 'fast_lio', 'rc': 0}
+[49.826265] (-) EventReactorShutdown: {}

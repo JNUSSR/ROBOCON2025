@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-38666a0f6d0bfde80d17.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "unitree_lidar_ros2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-98627c32da3a41386014.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "unitree_lidar_ros2_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-unitree_lidar_ros2_node-6a42a9362244171526b4.json",
+					"name" : "unitree_lidar_ros2_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "unitree_lidar_ros2_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-unitree_lidar_ros2_uninstall-562b976c00f5b839b45e.json",
+					"name" : "unitree_lidar_ros2_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ljhua/robocon/ROBOCON2025/Lidar_Pointlio (jinhua)/unilidar_sdk2-2.0.4/unitree_lidar_ros2/build/unitree_lidar_ros2",
+		"source" : "/home/ljhua/robocon/ROBOCON2025/Lidar_Pointlio (jinhua)/unilidar_sdk2-2.0.4/unitree_lidar_ros2/src/unitree_lidar_ros2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

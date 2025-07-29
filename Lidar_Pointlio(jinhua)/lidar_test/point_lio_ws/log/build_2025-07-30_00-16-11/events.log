@@ -1,0 +1,538 @@
+[0.000000] (-) TimerEvent: {}
+[0.000640] (point_lio) JobQueued: {'identifier': 'point_lio', 'dependencies': OrderedDict()}
+[0.000699] (point_lio) JobStarted: {'identifier': 'point_lio'}
+[0.022996] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'cmake'}
+[0.024370] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '/home/ljhua/robocon/lidar_test/point_lio_ws/src/point_lio_ros2', '-DCMAKE_INSTALL_PREFIX=/home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio'], 'cwd': '/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ljhua'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ljhua'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1509'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=feea3d9c907f94dc0a9612b66888f22d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ljhua'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ljhua'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ljhua/.local/bin:/home/ljhua/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ljhua-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:@/tmp/.ICE-unix/1509,unix/ljhua-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:/tmp/.ICE-unix/1509'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c79c7ec3_c130_4dbc_89d5_26c394b97f7d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C23KA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=feea3d9c907f94dc0a9612b66888f22d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099694] (-) TimerEvent: {}
+[0.200194] (-) TimerEvent: {}
+[0.300148] (point_lio) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300280] (-) TimerEvent: {}
+[0.400459] (-) TimerEvent: {}
+[0.405969] (point_lio) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.431293] (point_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500598] (-) TimerEvent: {}
+[0.561321] (point_lio) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.568502] (point_lio) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.574108] (point_lio) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.575532] (point_lio) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.583376] (point_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600714] (-) TimerEvent: {}
+[0.693632] (point_lio) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.700845] (-) TimerEvent: {}
+[0.703345] (point_lio) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.703700] (point_lio) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.704272] (point_lio) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.704937] (point_lio) StdoutLine: {'line': b'-- Current CPU architecture: x86_64\n'}
+[0.721216] (point_lio) StdoutLine: {'line': b'-- Processor number:  20\n'}
+[0.721584] (point_lio) StdoutLine: {'line': b'-- core for MP:  3\n'}
+[0.729986] (point_lio) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.800952] (-) TimerEvent: {}
+[0.901285] (-) TimerEvent: {}
+[1.001535] (-) TimerEvent: {}
+[1.101761] (-) TimerEvent: {}
+[1.201999] (-) TimerEvent: {}
+[1.250103] (point_lio) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.302094] (-) TimerEvent: {}
+[1.359906] (point_lio) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.402222] (-) TimerEvent: {}
+[1.406154] (point_lio) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.411137] (point_lio) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.421699] (point_lio) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.438559] (point_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.452339] (point_lio) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.502324] (-) TimerEvent: {}
+[1.506008] (point_lio) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.507920] (point_lio) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.602440] (-) TimerEvent: {}
+[1.607606] (point_lio) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.655887] (point_lio) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.683394] (point_lio) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.702619] (-) TimerEvent: {}
+[1.705199] (point_lio) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.802761] (-) TimerEvent: {}
+[1.846426] (point_lio) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.847032] (point_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.902886] (-) TimerEvent: {}
+[1.945397] (point_lio) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.946339] (point_lio) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.002984] (-) TimerEvent: {}
+[2.003361] (point_lio) StdoutLine: {'line': b'-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[2.004393] (point_lio) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.016375] (point_lio) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[2.047631] (point_lio) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.066760] (point_lio) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[2.100927] (point_lio) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[2.103100] (-) TimerEvent: {}
+[2.112433] (point_lio) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[2.187835] (point_lio) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[2.188294] (point_lio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.203269] (-) TimerEvent: {}
+[2.228418] (point_lio) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[2.258207] (point_lio) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[2.303472] (-) TimerEvent: {}
+[2.331077] (point_lio) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[2.331344] (point_lio) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[2.403627] (-) TimerEvent: {}
+[2.504271] (-) TimerEvent: {}
+[2.604895] (-) TimerEvent: {}
+[2.705712] (-) TimerEvent: {}
+[2.806097] (-) TimerEvent: {}
+[2.906396] (-) TimerEvent: {}
+[3.006832] (-) TimerEvent: {}
+[3.107199] (-) TimerEvent: {}
+[3.207797] (-) TimerEvent: {}
+[3.308176] (-) TimerEvent: {}
+[3.408569] (-) TimerEvent: {}
+[3.508945] (-) TimerEvent: {}
+[3.609348] (-) TimerEvent: {}
+[3.709791] (-) TimerEvent: {}
+[3.810157] (-) TimerEvent: {}
+[3.910425] (-) TimerEvent: {}
+[3.945872] (point_lio) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[3.979559] (point_lio) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[4.010560] (-) TimerEvent: {}
+[4.039274] (point_lio) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[4.050356] (point_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[4.110717] (-) TimerEvent: {}
+[4.156428] (point_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[4.210828] (-) TimerEvent: {}
+[4.265219] (point_lio) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[4.271223] (point_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[4.277505] (point_lio) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[4.310950] (-) TimerEvent: {}
+[4.411201] (-) TimerEvent: {}
+[4.423738] (point_lio) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[4.511335] (-) TimerEvent: {}
+[4.532154] (point_lio) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[4.611432] (-) TimerEvent: {}
+[4.670186] (point_lio) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[4.670817] (point_lio) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[4.671373] (point_lio) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[4.671911] (point_lio) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[4.672432] (point_lio) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[4.673020] (point_lio) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[4.673241] (point_lio) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[4.673494] (point_lio) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[4.674114] (point_lio) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[4.674746] (point_lio) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[4.675458] (point_lio) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[4.676089] (point_lio) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[4.676753] (point_lio) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[4.677450] (point_lio) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[4.678096] (point_lio) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[4.678760] (point_lio) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[4.679421] (point_lio) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[4.680050] (point_lio) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[4.680755] (point_lio) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[4.681321] (point_lio) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[4.681963] (point_lio) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[4.682127] (point_lio) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[4.688141] (point_lio) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[4.688906] (point_lio) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[4.689602] (point_lio) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[4.711507] (-) TimerEvent: {}
+[4.712519] (point_lio) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[4.713685] (point_lio) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[4.713737] (point_lio) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[4.781693] (point_lio) StdoutLine: {'line': b'-- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[4.811606] (-) TimerEvent: {}
+[4.911875] (-) TimerEvent: {}
+[5.012172] (-) TimerEvent: {}
+[5.112731] (-) TimerEvent: {}
+[5.213255] (-) TimerEvent: {}
+[5.313754] (-) TimerEvent: {}
+[5.359493] (point_lio) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12") \n'}
+[5.413863] (-) TimerEvent: {}
+[5.426576] (point_lio) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.500549] (point_lio) StdoutLine: {'line': b'-- Generating done\n'}
+[5.507753] (point_lio) StdoutLine: {'line': b'-- Build files have been written to: /home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio\n'}
+[5.513954] (-) TimerEvent: {}
+[5.519104] (point_lio) CommandEnded: {'returncode': 0}
+[5.519776] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'build'}
+[5.520947] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio', '--', '-j20', '-l20'], 'cwd': '/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ljhua'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ljhua'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1509'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=feea3d9c907f94dc0a9612b66888f22d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ljhua'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ljhua'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ljhua/.local/bin:/home/ljhua/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ljhua-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:@/tmp/.ICE-unix/1509,unix/ljhua-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:/tmp/.ICE-unix/1509'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c79c7ec3_c130_4dbc_89d5_26c394b97f7d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C23KA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=feea3d9c907f94dc0a9612b66888f22d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.580820] (point_lio) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/Estimator.cpp.o\x1b[0m\n'}
+[5.581585] (point_lio) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/parameters.cpp.o\x1b[0m\n'}
+[5.582003] (point_lio) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/laserMapping.cpp.o\x1b[0m\n'}
+[5.582069] (point_lio) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o\x1b[0m\n'}
+[5.582317] (point_lio) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/pointlio_mapping.dir/src/preprocess.cpp.o\x1b[0m\n'}
+[5.614074] (-) TimerEvent: {}
+[5.714407] (-) TimerEvent: {}
+[5.814661] (-) TimerEvent: {}
+[5.914918] (-) TimerEvent: {}
+[6.015188] (-) TimerEvent: {}
+[6.115456] (-) TimerEvent: {}
+[6.215720] (-) TimerEvent: {}
+[6.315974] (-) TimerEvent: {}
+[6.416237] (-) TimerEvent: {}
+[6.516515] (-) TimerEvent: {}
+[6.616867] (-) TimerEvent: {}
+[6.717136] (-) TimerEvent: {}
+[6.817505] (-) TimerEvent: {}
+[6.917777] (-) TimerEvent: {}
+[7.018033] (-) TimerEvent: {}
+[7.118292] (-) TimerEvent: {}
+[7.218658] (-) TimerEvent: {}
+[7.319000] (-) TimerEvent: {}
+[7.419349] (-) TimerEvent: {}
+[7.519642] (-) TimerEvent: {}
+[7.619903] (-) TimerEvent: {}
+[7.720164] (-) TimerEvent: {}
+[7.820367] (-) TimerEvent: {}
+[7.920596] (-) TimerEvent: {}
+[8.020856] (-) TimerEvent: {}
+[8.121131] (-) TimerEvent: {}
+[8.221421] (-) TimerEvent: {}
+[8.321649] (-) TimerEvent: {}
+[8.421881] (-) TimerEvent: {}
+[8.522235] (-) TimerEvent: {}
+[8.622472] (-) TimerEvent: {}
+[8.722704] (-) TimerEvent: {}
+[8.823064] (-) TimerEvent: {}
+[8.923304] (-) TimerEvent: {}
+[9.023649] (-) TimerEvent: {}
+[9.123977] (-) TimerEvent: {}
+[9.224337] (-) TimerEvent: {}
+[9.324687] (-) TimerEvent: {}
+[9.425108] (-) TimerEvent: {}
+[9.525416] (-) TimerEvent: {}
+[9.625840] (-) TimerEvent: {}
+[9.726215] (-) TimerEvent: {}
+[9.826626] (-) TimerEvent: {}
+[9.926892] (-) TimerEvent: {}
+[10.027125] (-) TimerEvent: {}
+[10.127365] (-) TimerEvent: {}
+[10.227624] (-) TimerEvent: {}
+[10.327889] (-) TimerEvent: {}
+[10.428183] (-) TimerEvent: {}
+[10.528488] (-) TimerEvent: {}
+[10.628785] (-) TimerEvent: {}
+[10.729220] (-) TimerEvent: {}
+[10.829553] (-) TimerEvent: {}
+[10.929866] (-) TimerEvent: {}
+[11.030201] (-) TimerEvent: {}
+[11.130491] (-) TimerEvent: {}
+[11.230813] (-) TimerEvent: {}
+[11.331130] (-) TimerEvent: {}
+[11.431506] (-) TimerEvent: {}
+[11.531828] (-) TimerEvent: {}
+[11.632181] (-) TimerEvent: {}
+[11.732494] (-) TimerEvent: {}
+[11.832918] (-) TimerEvent: {}
+[11.933202] (-) TimerEvent: {}
+[12.033509] (-) TimerEvent: {}
+[12.133794] (-) TimerEvent: {}
+[12.234128] (-) TimerEvent: {}
+[12.334426] (-) TimerEvent: {}
+[12.434733] (-) TimerEvent: {}
+[12.535019] (-) TimerEvent: {}
+[12.635260] (-) TimerEvent: {}
+[12.735502] (-) TimerEvent: {}
+[12.835721] (-) TimerEvent: {}
+[12.935972] (-) TimerEvent: {}
+[13.036226] (-) TimerEvent: {}
+[13.136456] (-) TimerEvent: {}
+[13.236718] (-) TimerEvent: {}
+[13.336993] (-) TimerEvent: {}
+[13.437251] (-) TimerEvent: {}
+[13.537472] (-) TimerEvent: {}
+[13.637742] (-) TimerEvent: {}
+[13.738071] (-) TimerEvent: {}
+[13.838408] (-) TimerEvent: {}
+[13.938634] (-) TimerEvent: {}
+[14.038905] (-) TimerEvent: {}
+[14.139162] (-) TimerEvent: {}
+[14.239472] (-) TimerEvent: {}
+[14.339700] (-) TimerEvent: {}
+[14.440055] (-) TimerEvent: {}
+[14.540414] (-) TimerEvent: {}
+[14.640746] (-) TimerEvent: {}
+[14.741086] (-) TimerEvent: {}
+[14.841435] (-) TimerEvent: {}
+[14.941792] (-) TimerEvent: {}
+[15.042164] (-) TimerEvent: {}
+[15.142398] (-) TimerEvent: {}
+[15.242760] (-) TimerEvent: {}
+[15.343126] (-) TimerEvent: {}
+[15.443472] (-) TimerEvent: {}
+[15.543735] (-) TimerEvent: {}
+[15.643973] (-) TimerEvent: {}
+[15.744306] (-) TimerEvent: {}
+[15.844537] (-) TimerEvent: {}
+[15.944756] (-) TimerEvent: {}
+[16.044970] (-) TimerEvent: {}
+[16.145309] (-) TimerEvent: {}
+[16.245545] (-) TimerEvent: {}
+[16.345798] (-) TimerEvent: {}
+[16.446124] (-) TimerEvent: {}
+[16.546405] (-) TimerEvent: {}
+[16.646633] (-) TimerEvent: {}
+[16.746892] (-) TimerEvent: {}
+[16.847341] (-) TimerEvent: {}
+[16.947557] (-) TimerEvent: {}
+[17.047773] (-) TimerEvent: {}
+[17.148037] (-) TimerEvent: {}
+[17.248295] (-) TimerEvent: {}
+[17.348527] (-) TimerEvent: {}
+[17.448743] (-) TimerEvent: {}
+[17.548995] (-) TimerEvent: {}
+[17.649340] (-) TimerEvent: {}
+[17.749566] (-) TimerEvent: {}
+[17.849826] (-) TimerEvent: {}
+[17.950075] (-) TimerEvent: {}
+[18.050293] (-) TimerEvent: {}
+[18.150526] (-) TimerEvent: {}
+[18.250784] (-) TimerEvent: {}
+[18.351022] (-) TimerEvent: {}
+[18.451268] (-) TimerEvent: {}
+[18.551515] (-) TimerEvent: {}
+[18.651754] (-) TimerEvent: {}
+[18.752024] (-) TimerEvent: {}
+[18.852357] (-) TimerEvent: {}
+[18.952586] (-) TimerEvent: {}
+[19.052856] (-) TimerEvent: {}
+[19.153189] (-) TimerEvent: {}
+[19.253487] (-) TimerEvent: {}
+[19.353711] (-) TimerEvent: {}
+[19.453962] (-) TimerEvent: {}
+[19.554301] (-) TimerEvent: {}
+[19.654545] (-) TimerEvent: {}
+[19.754774] (-) TimerEvent: {}
+[19.855111] (-) TimerEvent: {}
+[19.955455] (-) TimerEvent: {}
+[20.055669] (-) TimerEvent: {}
+[20.155884] (-) TimerEvent: {}
+[20.256100] (-) TimerEvent: {}
+[20.356369] (-) TimerEvent: {}
+[20.456613] (-) TimerEvent: {}
+[20.556874] (-) TimerEvent: {}
+[20.657220] (-) TimerEvent: {}
+[20.757502] (-) TimerEvent: {}
+[20.857740] (-) TimerEvent: {}
+[20.958083] (-) TimerEvent: {}
+[21.058308] (-) TimerEvent: {}
+[21.158539] (-) TimerEvent: {}
+[21.258831] (-) TimerEvent: {}
+[21.359055] (-) TimerEvent: {}
+[21.459288] (-) TimerEvent: {}
+[21.559514] (-) TimerEvent: {}
+[21.659754] (-) TimerEvent: {}
+[21.759955] (-) TimerEvent: {}
+[21.860205] (-) TimerEvent: {}
+[21.960523] (-) TimerEvent: {}
+[22.060742] (-) TimerEvent: {}
+[22.161005] (-) TimerEvent: {}
+[22.261355] (-) TimerEvent: {}
+[22.361578] (-) TimerEvent: {}
+[22.461846] (-) TimerEvent: {}
+[22.562097] (-) TimerEvent: {}
+[22.662451] (-) TimerEvent: {}
+[22.762693] (-) TimerEvent: {}
+[22.862961] (-) TimerEvent: {}
+[22.963231] (-) TimerEvent: {}
+[23.063494] (-) TimerEvent: {}
+[23.163718] (-) TimerEvent: {}
+[23.264057] (-) TimerEvent: {}
+[23.364403] (-) TimerEvent: {}
+[23.464639] (-) TimerEvent: {}
+[23.564913] (-) TimerEvent: {}
+[23.665264] (-) TimerEvent: {}
+[23.765508] (-) TimerEvent: {}
+[23.865726] (-) TimerEvent: {}
+[23.966050] (-) TimerEvent: {}
+[24.066298] (-) TimerEvent: {}
+[24.166536] (-) TimerEvent: {}
+[24.266812] (-) TimerEvent: {}
+[24.367072] (-) TimerEvent: {}
+[24.467303] (-) TimerEvent: {}
+[24.567531] (-) TimerEvent: {}
+[24.667777] (-) TimerEvent: {}
+[24.768102] (-) TimerEvent: {}
+[24.868379] (-) TimerEvent: {}
+[24.968604] (-) TimerEvent: {}
+[25.068864] (-) TimerEvent: {}
+[25.169205] (-) TimerEvent: {}
+[25.269461] (-) TimerEvent: {}
+[25.369733] (-) TimerEvent: {}
+[25.469985] (-) TimerEvent: {}
+[25.570212] (-) TimerEvent: {}
+[25.670435] (-) TimerEvent: {}
+[25.770656] (-) TimerEvent: {}
+[25.870925] (-) TimerEvent: {}
+[25.971231] (-) TimerEvent: {}
+[26.071461] (-) TimerEvent: {}
+[26.171676] (-) TimerEvent: {}
+[26.271923] (-) TimerEvent: {}
+[26.372177] (-) TimerEvent: {}
+[26.472521] (-) TimerEvent: {}
+[26.572737] (-) TimerEvent: {}
+[26.672990] (-) TimerEvent: {}
+[26.773207] (-) TimerEvent: {}
+[26.873482] (-) TimerEvent: {}
+[26.973706] (-) TimerEvent: {}
+[27.073978] (-) TimerEvent: {}
+[27.174322] (-) TimerEvent: {}
+[27.274550] (-) TimerEvent: {}
+[27.374805] (-) TimerEvent: {}
+[27.475064] (-) TimerEvent: {}
+[27.575439] (-) TimerEvent: {}
+[27.675699] (-) TimerEvent: {}
+[27.775952] (-) TimerEvent: {}
+[27.876201] (-) TimerEvent: {}
+[27.976493] (-) TimerEvent: {}
+[28.076734] (-) TimerEvent: {}
+[28.176978] (-) TimerEvent: {}
+[28.277197] (-) TimerEvent: {}
+[28.377433] (-) TimerEvent: {}
+[28.477655] (-) TimerEvent: {}
+[28.577868] (-) TimerEvent: {}
+[28.678114] (-) TimerEvent: {}
+[28.778476] (-) TimerEvent: {}
+[28.878737] (-) TimerEvent: {}
+[28.979007] (-) TimerEvent: {}
+[29.079264] (-) TimerEvent: {}
+[29.179526] (-) TimerEvent: {}
+[29.279783] (-) TimerEvent: {}
+[29.379997] (-) TimerEvent: {}
+[29.480327] (-) TimerEvent: {}
+[29.580543] (-) TimerEvent: {}
+[29.680799] (-) TimerEvent: {}
+[29.781053] (-) TimerEvent: {}
+[29.881305] (-) TimerEvent: {}
+[29.981557] (-) TimerEvent: {}
+[30.081812] (-) TimerEvent: {}
+[30.182131] (-) TimerEvent: {}
+[30.282396] (-) TimerEvent: {}
+[30.382616] (-) TimerEvent: {}
+[30.482856] (-) TimerEvent: {}
+[30.583101] (-) TimerEvent: {}
+[30.683353] (-) TimerEvent: {}
+[30.783585] (-) TimerEvent: {}
+[30.883820] (-) TimerEvent: {}
+[30.984075] (-) TimerEvent: {}
+[31.084334] (-) TimerEvent: {}
+[31.184552] (-) TimerEvent: {}
+[31.284799] (-) TimerEvent: {}
+[31.385053] (-) TimerEvent: {}
+[31.485310] (-) TimerEvent: {}
+[31.585580] (-) TimerEvent: {}
+[31.685801] (-) TimerEvent: {}
+[31.786053] (-) TimerEvent: {}
+[31.886298] (-) TimerEvent: {}
+[31.986538] (-) TimerEvent: {}
+[32.086787] (-) TimerEvent: {}
+[32.187006] (-) TimerEvent: {}
+[32.287221] (-) TimerEvent: {}
+[32.387441] (-) TimerEvent: {}
+[32.487677] (-) TimerEvent: {}
+[32.587981] (-) TimerEvent: {}
+[32.688324] (-) TimerEvent: {}
+[32.788553] (-) TimerEvent: {}
+[32.888800] (-) TimerEvent: {}
+[32.989045] (-) TimerEvent: {}
+[33.089378] (-) TimerEvent: {}
+[33.189599] (-) TimerEvent: {}
+[33.289818] (-) TimerEvent: {}
+[33.390072] (-) TimerEvent: {}
+[33.490345] (-) TimerEvent: {}
+[33.590562] (-) TimerEvent: {}
+[33.690804] (-) TimerEvent: {}
+[33.791129] (-) TimerEvent: {}
+[33.891404] (-) TimerEvent: {}
+[33.991644] (-) TimerEvent: {}
+[34.091913] (-) TimerEvent: {}
+[34.192164] (-) TimerEvent: {}
+[34.292409] (-) TimerEvent: {}
+[34.392679] (-) TimerEvent: {}
+[34.492900] (-) TimerEvent: {}
+[34.593254] (-) TimerEvent: {}
+[34.693488] (-) TimerEvent: {}
+[34.793707] (-) TimerEvent: {}
+[34.893965] (-) TimerEvent: {}
+[34.994312] (-) TimerEvent: {}
+[35.094559] (-) TimerEvent: {}
+[35.194833] (-) TimerEvent: {}
+[35.295086] (-) TimerEvent: {}
+[35.395434] (-) TimerEvent: {}
+[35.495676] (-) TimerEvent: {}
+[35.595902] (-) TimerEvent: {}
+[35.696169] (-) TimerEvent: {}
+[35.796361] (-) TimerEvent: {}
+[35.896715] (-) TimerEvent: {}
+[35.996980] (-) TimerEvent: {}
+[36.097305] (-) TimerEvent: {}
+[36.197535] (-) TimerEvent: {}
+[36.297796] (-) TimerEvent: {}
+[36.398046] (-) TimerEvent: {}
+[36.498299] (-) TimerEvent: {}
+[36.598522] (-) TimerEvent: {}
+[36.698786] (-) TimerEvent: {}
+[36.799104] (-) TimerEvent: {}
+[36.899459] (-) TimerEvent: {}
+[36.999676] (-) TimerEvent: {}
+[37.099897] (-) TimerEvent: {}
+[37.200217] (-) TimerEvent: {}
+[37.300497] (-) TimerEvent: {}
+[37.400803] (-) TimerEvent: {}
+[37.501064] (-) TimerEvent: {}
+[37.601430] (-) TimerEvent: {}
+[37.701662] (-) TimerEvent: {}
+[37.801909] (-) TimerEvent: {}
+[37.902236] (-) TimerEvent: {}
+[38.002628] (-) TimerEvent: {}
+[38.100837] (point_lio) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pointlio_mapping\x1b[0m\n'}
+[38.102699] (-) TimerEvent: {}
+[38.202952] (-) TimerEvent: {}
+[38.303398] (-) TimerEvent: {}
+[38.403695] (-) TimerEvent: {}
+[38.503951] (-) TimerEvent: {}
+[38.604220] (-) TimerEvent: {}
+[38.704443] (-) TimerEvent: {}
+[38.804691] (-) TimerEvent: {}
+[38.868764] (point_lio) StdoutLine: {'line': b'[100%] Built target pointlio_mapping\n'}
+[38.877840] (point_lio) CommandEnded: {'returncode': 0}
+[38.878600] (point_lio) JobProgress: {'identifier': 'point_lio', 'progress': 'install'}
+[38.891073] (point_lio) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio'], 'cwd': '/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'ljhua'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/ljhua'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1509'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=feea3d9c907f94dc0a9612b66888f22d'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'ljhua'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', ':/usr/local/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'ljhua'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/ljhua/.local/bin:/home/ljhua/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ljhua-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:@/tmp/.ICE-unix/1509,unix/ljhua-ASUS-TUF-Gaming-F15-FX507VV-FX507VV:/tmp/.ICE-unix/1509'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c79c7ec3_c130_4dbc_89d5_26c394b97f7d'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.C23KA3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=feea3d9c907f94dc0a9612b66888f22d'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[38.900842] (point_lio) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.901063] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/lib/point_lio/pointlio_mapping\n'}
+[38.903275] (point_lio) StdoutLine: {'line': b'-- Set runtime path of "/home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/lib/point_lio/pointlio_mapping" to ""\n'}
+[38.903458] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/config\n'}
+[38.903660] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/config/velody16.yaml\n'}
+[38.903855] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/config/unilidar_l1.yaml\n'}
+[38.904025] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/config/avia.yaml\n'}
+[38.904197] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/config/horizon.yaml\n'}
+[38.904402] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/config/mid360.yaml\n'}
+[38.904575] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/config/unilidar_l2.yaml\n'}
+[38.904778] (-) TimerEvent: {}
+[38.905015] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/config/ouster64.yaml\n'}
+[38.905220] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/launch\n'}
+[38.905413] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/launch/mapping_mid360.launch.py\n'}
+[38.905597] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/launch/mapping_velody16.launch.py\n'}
+[38.905776] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/launch/mapping_ouster64.launch.py\n'}
+[38.905940] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/launch/mapping_unilidar_l1.launch.py\n'}
+[38.906104] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/launch/gdb_debug_example.launch.py\n'}
+[38.906294] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/launch/mapping_horizon.launch.py\n'}
+[38.906477] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/launch/mapping_unilidar_l2.launch.py\n'}
+[38.906661] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/launch/mapping_avia.launch.py\n'}
+[38.906797] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l1.launch.py\n'}
+[38.906931] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/launch/correct_odom_unilidar_l2.launch.py\n'}
+[38.907278] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/rviz_cfg\n'}
+[38.907485] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/rviz_cfg/loam_livox.rviz\n'}
+[38.907575] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/ament_index/resource_index/package_run_dependencies/point_lio\n'}
+[38.907657] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/ament_index/resource_index/parent_prefix_path/point_lio\n'}
+[38.907731] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/environment/ament_prefix_path.sh\n'}
+[38.907837] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/environment/ament_prefix_path.dsv\n'}
+[38.907906] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/environment/path.sh\n'}
+[38.907973] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/environment/path.dsv\n'}
+[38.908053] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/local_setup.bash\n'}
+[38.908127] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/local_setup.sh\n'}
+[38.908196] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/local_setup.zsh\n'}
+[38.908274] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/local_setup.dsv\n'}
+[38.908369] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/package.dsv\n'}
+[38.908445] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/ament_index/resource_index/packages/point_lio\n'}
+[38.908509] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[38.908570] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/cmake/point_lioConfig.cmake\n'}
+[38.908629] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/cmake/point_lioConfig-version.cmake\n'}
+[38.908688] (point_lio) StdoutLine: {'line': b'-- Installing: /home/ljhua/robocon/lidar_test/point_lio_ws/install/point_lio/share/point_lio/package.xml\n'}
+[38.909805] (point_lio) CommandEnded: {'returncode': 0}
+[38.929373] (point_lio) JobEnded: {'identifier': 'point_lio', 'rc': 0}
+[38.929694] (-) EventReactorShutdown: {}
