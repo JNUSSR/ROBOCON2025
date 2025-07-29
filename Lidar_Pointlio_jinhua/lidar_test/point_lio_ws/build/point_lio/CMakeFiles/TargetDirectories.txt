@@ -1,0 +1,10 @@
+/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio/CMakeFiles/uninstall.dir
+/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio/CMakeFiles/point_lio_uninstall.dir
+/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio/CMakeFiles/pointlio_mapping.dir
+/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio/CMakeFiles/test.dir
+/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio/CMakeFiles/edit_cache.dir
+/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio/CMakeFiles/rebuild_cache.dir
+/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio/CMakeFiles/list_install_components.dir
+/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio/CMakeFiles/install.dir
+/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio/CMakeFiles/install/local.dir
+/home/ljhua/robocon/lidar_test/point_lio_ws/build/point_lio/CMakeFiles/install/strip.dir

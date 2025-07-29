@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "fast_lio__py",
+		"source" : "/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio/fast_lio__py"
+	}
+}

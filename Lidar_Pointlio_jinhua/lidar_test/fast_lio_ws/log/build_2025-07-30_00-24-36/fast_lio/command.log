@@ -1,0 +1,4 @@
+Invoking command in '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio -- -j20 -l20
+Invoked command in '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio -- -j20 -l20
+Invoking command in '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio
+Invoked command in '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio

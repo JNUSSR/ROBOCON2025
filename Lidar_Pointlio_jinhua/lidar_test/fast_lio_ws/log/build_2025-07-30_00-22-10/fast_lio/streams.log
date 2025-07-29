@@ -1,0 +1,350 @@
+[0.008s] Invoking command in '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ljhua/robocon/lidar_test/fast_lio_ws/src/unilidar_fastlio_ros2 -DCMAKE_INSTALL_PREFIX=/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio
+[0.057s] -- The C compiler identification is GNU 11.4.0
+[0.111s] -- The CXX compiler identification is GNU 11.4.0
+[0.116s] -- Detecting C compiler ABI info
+[0.184s] -- Detecting C compiler ABI info - done
+[0.190s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.190s] -- Detecting C compile features
+[0.190s] -- Detecting C compile features - done
+[0.193s] -- Detecting CXX compiler ABI info
+[0.275s] -- Detecting CXX compiler ABI info - done
+[0.284s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.285s] -- Detecting CXX compile features
+[0.285s] -- Detecting CXX compile features - done
+[0.286s] [0mCurrent CPU archtecture: x86_64[0m
+[0.290s] [0mProcesser number:  20[0m
+[0.290s] [0mcore for MP: 3[0m
+[0.656s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12") 
+[0.657s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.082s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.150s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.169s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.172s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.176s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.183s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.193s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.217s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.219s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.292s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.317s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.349s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.356s] -- Looking for pthread.h
+[1.438s] -- Looking for pthread.h - found
+[1.438s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.524s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.525s] -- Found Threads: TRUE  
+[1.558s] -- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.574s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.583s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.593s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.605s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[1.617s] -- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.630s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[1.658s] -- Checking for module 'eigen3'
+[1.671s] --   Found eigen3, version 3.4.0
+[1.712s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.712s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.739s] -- Checking for module 'flann'
+[1.750s] --   Found flann, version 1.9.1
+[1.798s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.798s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.757s] -- Checking for module 'libusb-1.0'
+[2.773s] --   Found libusb-1.0, version 1.0.25
+[2.816s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.818s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.888s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.999s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.003s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.008s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[3.113s] -- Found Qhull version 8.0.2
+[3.222s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.329s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.330s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[3.330s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.331s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[3.332s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[3.332s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[3.332s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[3.333s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[3.333s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.334s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[3.334s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[3.335s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[3.336s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[3.336s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[3.337s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[3.338s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[3.338s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[3.339s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[3.340s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[3.340s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[3.341s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[3.341s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[3.341s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[3.342s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[3.342s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[3.357s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.358s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.358s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.402s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.410s] [33mCMake Warning (dev) at CMakeLists.txt:78 (find_package):
+[3.410s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[3.410s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[3.410s]   command to set the policy and suppress this warning.
+[3.410s] 
+[3.410s]   CMake variable PCL_ROOT is set to:
+[3.410s] 
+[3.410s]     /usr
+[3.410s] 
+[3.410s]   For compatibility, CMake is ignoring the variable.
+[3.410s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.410s] [0m
+[3.415s] -- PCL: /usr/include/pcl-1.12
+[3.415s] [0mEigen:/usr/include/eigen3[0m
+[3.600s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.845s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.966s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.988s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[3.989s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[4.006s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[4.006s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.006s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[4.006s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[4.022s] -- Found PythonExtra: .so  
+[4.065s] -- Configuring done
+[4.118s] -- Generating done
+[4.134s] -- Build files have been written to: /home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio
+[4.148s] Invoked command in '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ljhua/robocon/lidar_test/fast_lio_ws/src/unilidar_fastlio_ros2 -DCMAKE_INSTALL_PREFIX=/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio
+[4.150s] Invoking command in '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio -- -j20 -l20
+[4.194s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.204s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.211s] [  8%] [32mBuilding CXX object CMakeFiles/odometry_to_tf.dir/src/odometry_to_tf.cpp.o[0m
+[4.216s] [  8%] Built target ament_cmake_python_copy_fast_lio
+[4.405s] [  8%] Built target fast_lio__cpp
+[4.413s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.413s] [ 13%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.414s] [ 16%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_c.dir/rosidl_generator_c/fast_lio/msg/detail/pose6_d__functions.c.o[0m
+[4.415s] [ 18%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.420s] running egg_info
+[4.421s] creating fast_lio.egg-info
+[4.429s] writing fast_lio.egg-info/PKG-INFO
+[4.429s] writing dependency_links to fast_lio.egg-info/dependency_links.txt
+[4.429s] writing top-level names to fast_lio.egg-info/top_level.txt
+[4.429s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[4.453s] reading manifest file 'fast_lio.egg-info/SOURCES.txt'
+[4.453s] writing manifest file 'fast_lio.egg-info/SOURCES.txt'
+[4.483s] [ 18%] Built target ament_cmake_python_build_fast_lio_egg
+[4.494s] [ 21%] [32m[1mLinking C shared library libfast_lio__rosidl_generator_c.so[0m
+[4.524s] [ 21%] Built target fast_lio__rosidl_generator_c
+[4.533s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.534s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.534s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.600s] [ 32%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fast_lio/msg/pose6_d__type_support.cpp.o[0m
+[4.619s] [ 35%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fast_lio/msg/detail/pose6_d__type_support.cpp.o[0m
+[4.628s] [ 37%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fast_lio/msg/detail/dds_fastrtps/pose6_d__type_support.cpp.o[0m
+[4.740s] [ 40%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_c.dir/rosidl_typesupport_c/fast_lio/msg/pose6_d__type_support.cpp.o[0m
+[4.760s] [ 43%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fast_lio/msg/detail/pose6_d__type_support.c.o[0m
+[4.764s] [ 45%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_c.so[0m
+[4.765s] [ 48%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_cpp.so[0m
+[4.798s] [ 48%] Built target fast_lio__rosidl_typesupport_cpp
+[4.799s] [ 51%] [32mBuilding CXX object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fast_lio/msg/detail/pose6_d__type_support_c.cpp.o[0m
+[4.807s] [ 51%] Built target fast_lio__rosidl_typesupport_c
+[4.817s] [ 54%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/laserMapping.cpp.o[0m
+[4.817s] [ 56%] [32m[1mLinking C shared library libfast_lio__rosidl_typesupport_introspection_c.so[0m
+[4.820s] [ 59%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/include/ikd-Tree/ikd_Tree.cpp.o[0m
+[4.820s] [ 62%] [32mBuilding CXX object CMakeFiles/fastlio_mapping.dir/src/preprocess.cpp.o[0m
+[4.848s] [ 62%] Built target fast_lio__rosidl_typesupport_introspection_c
+[4.868s] [ 64%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_introspection_cpp.so[0m
+[4.897s] [ 67%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_cpp.so[0m
+[4.898s] [ 67%] Built target fast_lio__rosidl_typesupport_introspection_cpp
+[4.953s] [ 67%] Built target fast_lio__rosidl_typesupport_fastrtps_cpp
+[5.009s] [ 70%] [32m[1mLinking CXX shared library libfast_lio__rosidl_typesupport_fastrtps_c.so[0m
+[5.076s] [ 70%] Built target fast_lio__rosidl_typesupport_fastrtps_c
+[5.096s] [ 70%] Built target fast_lio
+[5.116s] [ 72%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.398s] [ 72%] Built target fast_lio__py
+[5.418s] [ 75%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_generator_py.dir/rosidl_generator_py/fast_lio/msg/_pose6_d_s.c.o[0m
+[5.513s] [ 78%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/libfast_lio__rosidl_generator_py.so[0m
+[5.550s] [ 78%] Built target fast_lio__rosidl_generator_py
+[5.569s] [ 81%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c.o[0m
+[5.570s] [ 86%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[5.570s] [ 86%] [32mBuilding C object CMakeFiles/fast_lio__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[5.646s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.648s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.673s] [ 91%] Built target fast_lio__rosidl_typesupport_fastrtps_c__pyext
+[5.680s] [ 91%] Built target fast_lio__rosidl_typesupport_c__pyext
+[5.692s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[5.722s] [ 94%] Built target fast_lio__rosidl_typesupport_introspection_c__pyext
+[8.687s] In file included from [01m[K/usr/include/boost/smart_ptr/detail/sp_thread_sleep.hpp:22[m[K,
+[8.687s]                  from [01m[K/usr/include/boost/smart_ptr/detail/yield_k.hpp:23[m[K,
+[8.687s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:14[m[K,
+[8.687s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock.hpp:42[m[K,
+[8.687s]                  from [01m[K/usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:25[m[K,
+[8.687s]                  from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:29[m[K,
+[8.687s]                  from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+[8.687s]                  from [01m[K/usr/include/boost/date_time/microsec_time_clock.hpp:18[m[K,
+[8.687s]                  from [01m[K/usr/include/boost/interprocess/detail/posix_time_types_wrk.hpp:31[m[K,
+[8.687s]                  from [01m[K/usr/include/boost/interprocess/detail/os_thread_functions.hpp:36[m[K,
+[8.687s]                  from [01m[K/usr/include/boost/interprocess/sync/file_lock.hpp:26[m[K,
+[8.687s]                  from [01m[K/usr/include/pcl-1.12/pcl/io/pcd_io.h:46[m[K,
+[8.687s]                  from [01m[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:73[m[K,
+[8.687s]                  from [01m[K/home/ljhua/robocon/lidar_test/fast_lio_ws/src/unilidar_fastlio_ros2/src/IMU_Processing.hpp:18[m[K,
+[8.687s]                  from [01m[K/home/ljhua/robocon/lidar_test/fast_lio_ws/src/unilidar_fastlio_ros2/src/laserMapping.cpp:47[m[K:
+[8.687s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[8.687s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[8.687s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[10.795s] [ 97%] [32m[1mLinking CXX executable odometry_to_tf[0m
+[11.096s] [ 97%] Built target odometry_to_tf
+[48.978s] [100%] [32m[1mLinking CXX executable fastlio_mapping[0m
+[49.697s] [100%] Built target fastlio_mapping
+[49.708s] Invoked command in '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio -- -j20 -l20
+[49.717s] Invoking command in '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio
+[49.724s] -- Install configuration: "Release"
+[49.725s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/ament_index/resource_index/rosidl_interfaces/fast_lio
+[49.725s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio
+[49.725s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg
+[49.725s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.h
+[49.725s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[49.725s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.h
+[49.725s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.h
+[49.725s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.h
+[49.725s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__functions.c
+[49.725s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_c__visibility_control.h
+[49.725s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/library_path.sh
+[49.725s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/library_path.dsv
+[49.725s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so
+[49.726s] -- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_c.so" to ""
+[49.726s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio
+[49.726s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg
+[49.726s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[49.726s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[49.726s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_c.h
+[49.726s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so
+[49.726s] -- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_c.so" to ""
+[49.726s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio
+[49.726s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg
+[49.727s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_generator_cpp__visibility_control.hpp
+[49.727s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[49.727s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.hpp
+[49.727s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__struct.hpp
+[49.727s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__builder.hpp
+[49.727s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__traits.hpp
+[49.727s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/pose6_d.hpp
+[49.727s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio
+[49.727s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg
+[49.727s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[49.727s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_fastrtps_cpp.hpp
+[49.727s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/dds_fastrtps
+[49.728s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[49.728s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so
+[49.728s] -- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_fastrtps_cpp.so" to ""
+[49.728s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio
+[49.728s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg
+[49.728s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[49.728s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[49.728s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_c.h
+[49.728s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.c
+[49.728s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so
+[49.728s] -- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_c.so" to ""
+[49.729s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so
+[49.729s] -- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_c.so" to ""
+[49.729s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio
+[49.729s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg
+[49.729s] -- Up-to-date: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail
+[49.729s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__type_support.cpp
+[49.729s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/include/fast_lio/fast_lio/msg/detail/pose6_d__rosidl_typesupport_introspection_cpp.hpp
+[49.729s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so
+[49.729s] -- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_introspection_cpp.so" to ""
+[49.729s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so
+[49.730s] -- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_typesupport_cpp.so" to ""
+[49.730s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/pythonpath.sh
+[49.730s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/pythonpath.dsv
+[49.730s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info
+[49.730s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/SOURCES.txt
+[49.730s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/PKG-INFO
+[49.730s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/top_level.txt
+[49.730s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio-0.0.0-py3.10.egg-info/dependency_links.txt
+[49.730s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio
+[49.730s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_fastrtps_c.c
+[49.731s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_introspection_c.c
+[49.731s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[49.731s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[49.731s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg
+[49.731s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py
+[49.731s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py
+[49.731s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d_s.c
+[49.731s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py
+[49.731s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/_fast_lio_s.ep.rosidl_typesupport_c.c
+[49.731s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[49.731s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/libfast_lio__rosidl_generator_py.so
+[49.775s] Listing '/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio'...
+[49.775s] Compiling '/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/__init__.py'...
+[49.775s] Listing '/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg'...
+[49.775s] Compiling '/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/__init__.py'...
+[49.775s] Compiling '/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/msg/_pose6_d.py'...
+[49.783s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[49.783s] -- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[49.784s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[49.784s] -- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[49.784s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[49.784s] -- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/local/lib/python3.10/dist-packages/fast_lio/fast_lio_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[49.785s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so
+[49.785s] -- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/libfast_lio__rosidl_generator_py.so" to ""
+[49.785s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/msg/Pose6D.idl
+[49.785s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/msg/Pose6D.msg
+[49.785s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/fast_lio/fastlio_mapping
+[49.787s] -- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/fast_lio/fastlio_mapping" to ""
+[49.787s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/fast_lio/odometry_to_tf
+[49.788s] -- Set runtime path of "/home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/lib/fast_lio/odometry_to_tf" to ""
+[49.788s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config
+[49.788s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config/avia.yaml
+[49.789s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config/horizon.yaml
+[49.789s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config/mid360.yaml
+[49.789s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config/unilidar_l2.yaml
+[49.789s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config/velodyne.yaml
+[49.789s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/config/ouster64.yaml
+[49.789s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/launch
+[49.789s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/launch/mapping.launch.py
+[49.789s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/launch/gdb_debug_example.launch
+[49.789s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/rviz
+[49.790s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/rviz/fastlio.rviz
+[49.790s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/ament_index/resource_index/package_run_dependencies/fast_lio
+[49.790s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/ament_index/resource_index/parent_prefix_path/fast_lio
+[49.790s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.sh
+[49.791s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/ament_prefix_path.dsv
+[49.791s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/path.sh
+[49.791s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/environment/path.dsv
+[49.791s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/local_setup.bash
+[49.791s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/local_setup.sh
+[49.791s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/local_setup.zsh
+[49.791s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/local_setup.dsv
+[49.791s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/package.dsv
+[49.792s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/ament_index/resource_index/packages/fast_lio
+[49.792s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport.cmake
+[49.792s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cExport-release.cmake
+[49.792s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport.cmake
+[49.792s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cExport-release.cmake
+[49.792s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_cppExport.cmake
+[49.792s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport.cmake
+[49.792s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[49.793s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport.cmake
+[49.793s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cExport-release.cmake
+[49.793s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport.cmake
+[49.793s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cExport-release.cmake
+[49.793s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport.cmake
+[49.793s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_introspection_cppExport-release.cmake
+[49.793s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport.cmake
+[49.794s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lio__rosidl_typesupport_cppExport-release.cmake
+[49.794s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport.cmake
+[49.794s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/export_fast_lio__rosidl_generator_pyExport-release.cmake
+[49.794s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake-extras.cmake
+[49.794s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_include_directories-extras.cmake
+[49.794s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_libraries-extras.cmake
+[49.794s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_targets-extras.cmake
+[49.795s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[49.795s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/ament_cmake_export_dependencies-extras.cmake
+[49.795s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[49.795s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig.cmake
+[49.795s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/cmake/fast_lioConfig-version.cmake
+[49.795s] -- Installing: /home/ljhua/robocon/lidar_test/fast_lio_ws/install/fast_lio/share/fast_lio/package.xml
+[49.799s] Invoked command in '/home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ljhua/robocon/lidar_test/fast_lio_ws/build/fast_lio
