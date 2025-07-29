@@ -256,7 +256,7 @@ static void espnow_data_callback(const sensor_data_t *data)
         // 直接保存结构体内容到全局变量
         memcpy(received_str, data, sizeof(sensor_data_t));
         data_received = true;
-        ESP_LOGI(TAG, "接收到ESP-NOW结构体: sudu1=%s, x=%s, y=%s, sudu2=%s", data->sudu1, data->x, data->y, data->sudu2);
+        ESP_LOGI(TAG, "接收到ESP-NOW结构体: sudu1=%s, x=%s, y=%s, sudu2=%s jiaodu=%s" , data->sudu1, data->x, data->y, data->sudu2,data->jiaodu);
     }
 }
 
@@ -302,6 +302,7 @@ static void sensor_callback(lv_timer_t *timer)
     static char last_x[7] = "0";
     static char last_y[7] = "0";
     static char last_sudu2[7] = "0";
+    static char last_jiaodu[7]="0";
 
     if (!data_received) {
         // 未收到新数据，显示上一次的值
@@ -309,6 +310,7 @@ static void sensor_callback(lv_timer_t *timer)
         lv_label_set_text(label_accel_y, last_x);
         lv_label_set_text(label_accel_z, last_y);
         lv_label_set_text(label_gyro_x, last_sudu2);
+        lv_label_set_text(label_gyro_y, last_jiaodu);
         return;
     }
 
@@ -338,8 +340,12 @@ static void sensor_callback(lv_timer_t *timer)
         last_sudu2[sizeof(last_sudu2) - 1] = '\0';
     }
     lv_label_set_text(label_gyro_x, last_sudu2);
-}
-
+if (strcmp(pdata->jiaodu, "e") != 0) {///////////////////////////////////未修改
+        strncpy(last_jiaodu, pdata->jiaodu, sizeof(last_jiaodu) - 1);
+        last_jiaodu[sizeof(last_jiaodu) - 1] = '\0';
+    }
+    lv_label_set_text(label_gyro_y, last_jiaodu);
+}/////////////////////////////////////////////////////////
 // 创建传感器显示界面
 void lvgl_sensor_ui_init(lv_obj_t *parent)
 {
@@ -368,7 +374,11 @@ void lvgl_sensor_ui_init(lv_obj_t *parent)
     list_item = lv_list_add_btn(list, NULL, "sudu2");
     label_gyro_x = lv_label_create(list_item);
     lv_label_set_text(label_gyro_x, "0");
-
+    ////////////////////////////////////未修改
+    list_item = lv_list_add_btn(list, NULL, "jiaodu");
+    label_gyro_y = lv_label_create(list_item);
+    lv_label_set_text(label_gyro_y, "0");
+    ///////////////////////////////////////////////
     // 创建定时器更新ESP-NOW数据
     sensor_timer = lv_timer_create(sensor_callback, 100, NULL);
 }
