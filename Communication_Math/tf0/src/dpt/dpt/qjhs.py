@@ -2,6 +2,21 @@ import math
 import numpy as np
 import random
 import matplotlib.pyplot as plt
+import pandas as pd
+import os
+current_dir = os.getcwd()
+file_path = os.path.join(current_dir, 'velocity_vs_distance.csv')
+data=pd.read_csv(file_path)
+data_np=data.to_numpy()
+distance=data_np[:,0]
+velocity=data_np[:,1]
+def l_v(d):
+     index=d//0.014
+     v=velocity[int(index)]
+     if index>999:
+          return 0
+     else :
+        return v
 #高度计算函数()
 def gd(x_t,v,theta):
     # 初始化参数
