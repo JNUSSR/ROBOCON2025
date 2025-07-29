@@ -8,7 +8,7 @@ from dpt.cktongxin import SerialSender
 from tf2_ros import TransformException
 from tf2_ros.buffer import Buffer
 from tf2_ros.transform_listener import TransformListener
-from dpt.qjhs import mnth,gd,object
+from dpt.qjhs import l_v
 import numpy as np
 import time
 class TfSubscriber(Node):
@@ -31,10 +31,14 @@ class TfSubscriber(Node):
                 rclpy.time.Time(),
                 timeout=rclpy.duration.Duration(seconds=1.0))
             translation = transform.transform.translation
+            rotation=transform.transform.rotation
+            yaw=abs(rotation.z)
             self.x = translation.x
             self.y = translation.y
+            distance=math.sqrt((4-self.x)**2+(15-self.y)**2)
+            v=l_v(distance)
             # 直接在这里发送
-            message = f"$e,{self.x:.3f},{self.y:.3f},7#"  
+            message = f"${v:.3f},{self.x:.3f},{self.y:.3f},e,{np.arctan((abs(15-self.y)/(4-self.x)))-yaw}#"  
             self.sender.send(message)
             self.get_logger().info(f"Send ,{self.x:.3f},{self.y:.3f},")
         except TransformException as ex:
@@ -55,4 +59,6 @@ def main(args=None):
 if __name__ ==  '__main__':
     main()
      
+     
+
      
