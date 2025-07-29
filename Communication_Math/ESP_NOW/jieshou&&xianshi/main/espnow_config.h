@@ -24,7 +24,8 @@ typedef struct {
     char sudu1[7];   // 速度1，截取前6个字符
     char x[7];       // X坐标，截取前6个字符
     char y[7];       // Y坐标，截取前6个字符
-    char sudu2[7];   // 速度2，截取前6个字符
+    char sudu2[7];  // 速度2，截取前6个字符
+    char jiaodu[7]  //角度,截取前6个字符
 } sensor_data_t;
 
 // ESP-NOW 状态枚举
